@@ -10,7 +10,7 @@ tags: Respiratory System 呼吸系统
 The **respiratory system** is the organs and other parts of your body involved in breathing,
 when you exchange oxygen and carbon dioxide.
 
-## Parts of the Respiratory System
+### Parts of the Respiratory System
 
 * Nose and nasal cavity
 * Sinuses
@@ -25,7 +25,7 @@ when you exchange oxygen and carbon dioxide.
 * Air sacs (alveoli)
 * Capillaries
 
-## How Do We Breathe?
+### How Do We Breathe?
 
 Breathing starts when you inhale air into your nose or mouth.
 It travels down the back of your throat and into your windpipe,
