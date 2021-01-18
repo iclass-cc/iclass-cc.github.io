@@ -49,7 +49,7 @@ $$\text{div}(\langle -y,x \rangle ) = \dfrac{\partial}{\partial x} (-y) + \dfrac
 
 ![Figure 1](https://tenetai.com/iclass/d1.jpg)
 
-- Figure 1: (a) Vector field ⟨1,2⟩ has zero divergence. (b) Vector field ⟨−𝑦,𝑥⟩ also has zero divergence.
+> Figure 1: (a) Vector field ⟨1,2⟩ has zero divergence. (b) Vector field ⟨−𝑦,𝑥⟩ also has zero divergence.
 
 By contrast, consider radial vector field $\overrightarrow{\mathbf{R}}(x, y)=\langle-x,-y\rangle$ in Figure 2. At any given point, more fluid is flowing in than is flowing out, and therefore the “outgoingness” of the field is negative. We expect the divergence of this field to be negative, and this is indeed the case, as
 
@@ -57,7 +57,7 @@ $$\operatorname{div}(\overrightarrow{\mathbf{R}})=\frac{\partial}{\partial x}(-x
 
 ![Figure 2](https://tenetai.com/iclass/d2.jpg)
 
-- Figure 2: This vector field has negative divergence.
+> Figure 2: This vector field has negative divergence.
 
 To get a global sense of what divergence is telling us, suppose that a vector field in $\mathbb{R}^2$ represents the velocity of a fluid. Imagine taking an elastic circle (a circle with a shape that can be changed by the vector field) and dropping it into a fluid. If the circle maintains its exact area as it flows through the fluid, then the divergence is zero. This would occur for both vector fields in Figure 1. On the other hand, if the circle’s shape is distorted so that its area shrinks or expands, then the divergence is not zero. Imagine dropping such an elastic circle into the radial vector field in Figure 2 so that the center of the circle lands at point (3,3). The circle would flow toward the origin, and as it did so the front of the circle would travel more slowly than the back, causing the circle to “scrunch” and lose area. This is how you can see a negative divergence.
 
@@ -67,7 +67,7 @@ The second operation on a vector field that we examine is the curl, which measur
 
 ![Figure Curl](https://tenetai.com/iclass/c1.jpg)
 
-- Figure 3: To visualize curl at a point, imagine placing a small paddlewheel into the vector field at a point.
+> Figure 3: To visualize curl at a point, imagine placing a small paddlewheel into the vector field at a point.
 
 Consider the vector fields in Figure 1. In part (a), the vector field is constant and there is no spin at any point. Therefore, we expect the curl of the field to be zero, and this is indeed the case. Part (b) shows a rotational field, so the field has spin. In particular, if you place a paddlewheel into a field at any point so that the axis of the wheel is perpendicular to a plane, the wheel rotates counterclockwise. Therefore, we expect the curl of the field to be nonzero, and this is indeed the case (the curl is $2\,\mathbf{\hat k}$.
 
