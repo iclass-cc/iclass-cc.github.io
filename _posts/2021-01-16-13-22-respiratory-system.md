@@ -49,4 +49,25 @@ As the cells use the oxygen, they make carbon dioxide that goes into your blood.
 Your blood then carries the carbon dioxide back to your lungs,
 where it’s removed from your body when you exhale.
 
+当您将空气吸入鼻子或嘴中时，呼吸开始。
+
+它沿着您的喉咙后部行进，进入您的气管，气管分为称为支气管的空气通道。
+
+为了使您的肺部表现最佳，这些呼吸道需要打开。
+
+他们应该没有发炎或肿胀和多余的黏液。
+
+当支气管穿过肺部时，它们会分成较小的空气通道，称为细支气管。
+
+细支气管终止于称为肺泡的微小气球状气囊。您的身体有大约6亿个肺泡。
+
+肺泡被称为毛细血管的细小血管网包围。
+在这里，吸入空气中的氧气进入您的血液。
+
+吸收氧气后，血液流到您的心脏。
+然后，心脏将其通过身体泵送到组织和器官的细胞。
+
+当细胞使用氧气时，它们会产生二氧化碳，这些二氧化碳会进入您的血液。
+然后，血液将二氧化碳带回肺部，在呼气时将其从体内清除。
+
 <!--more-->
