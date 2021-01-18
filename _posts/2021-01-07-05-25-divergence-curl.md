@@ -14,7 +14,7 @@ If $\vec{F}$ represents the velocity of a fluid, then the divergence of $\vec{F}
 
 ### Definition: divergence in $\mathbb{R}^3$
 
-If $\vec{F} = \langle P,Q,R \rangle$ is a vector field in $\mathbb{R}^3$ and $P_x, \, Q_y,$ and $R_z$ all exist, then the divergence of \vec{F} is defined by
+If $\vec{F} = \langle P,Q,R \rangle$ is a vector field in $\mathbb{R}^3$ and $P_x, \, Q_y,$ and $R_z$ all exist, then the divergence of $\vec{F}$ is defined by
 
 $$\begin{aligned}
 \operatorname{div} F &=P_{x}+Q_{y}+R_{z} \\
@@ -51,9 +51,9 @@ $$\text{div}(\langle -y,x \rangle ) = \dfrac{\partial}{\partial x} (-y) + \dfrac
 
 > Figure 1: (a) Vector field ⟨1,2⟩ has zero divergence. (b) Vector field ⟨−𝑦,𝑥⟩ also has zero divergence.
 
-By contrast, consider radial vector field $\overrightarrow{\mathbf{R}}(x, y)=\langle-x,-y\rangle$ in Figure 2. At any given point, more fluid is flowing in than is flowing out, and therefore the “outgoingness” of the field is negative. We expect the divergence of this field to be negative, and this is indeed the case, as
+By contrast, consider radial vector field $\vec{R}(x, y)=\langle-x,-y\rangle$ in Figure 2. At any given point, more fluid is flowing in than is flowing out, and therefore the “outgoingness” of the field is negative. We expect the divergence of this field to be negative, and this is indeed the case, as
 
-$$\operatorname{div}(\overrightarrow{\mathbf{R}})=\frac{\partial}{\partial x}(-x)+\frac{\partial}{\partial y}(-y)=-2$$
+$$\operatorname{div}(\vec{R})=\frac{\partial}{\partial x}(-x)+\frac{\partial}{\partial y}(-y)=-2$$
 
 ![Figure 2](https://tenetai.com/iclass/d2.jpg)
 
@@ -63,7 +63,7 @@ To get a global sense of what divergence is telling us, suppose that a vector fi
 
 ## Curl
 
-The second operation on a vector field that we examine is the curl, which measures the extent of rotation of the field about a point. Suppose that $\mathbf{F}$ represents the velocity field of a fluid. Then, the curl of $\mathbf{F}$ at point $P$ is a vector that measures the tendency of particles near $P$ to rotate about the axis that points in the direction of this vector. The magnitude of the curl vector at $P$ measures how quickly the particles rotate around this axis. In other words, the curl at a point is a measure of the vector field’s “spin” at that point. Visually, imagine placing a paddlewheel into a fluid at $P$ , with the axis of the paddlewheel aligned with the curl vector (Figure 3). The curl measures the tendency of the paddlewheel to rotate.
+The second operation on a vector field that we examine is the curl, which measures the extent of rotation of the field about a point. Suppose that $\vec{F}$ represents the velocity field of a fluid. Then, the curl of $\vec{F}$ at point $P$ is a vector that measures the tendency of particles near $P$ to rotate about the axis that points in the direction of this vector. The magnitude of the curl vector at $P$ measures how quickly the particles rotate around this axis. In other words, the curl at a point is a measure of the vector field’s “spin” at that point. Visually, imagine placing a paddlewheel into a fluid at $P$ , with the axis of the paddlewheel aligned with the curl vector (Figure 3). The curl measures the tendency of the paddlewheel to rotate.
 
 ![Figure Curl](https://tenetai.com/iclass/c1.jpg)
 
