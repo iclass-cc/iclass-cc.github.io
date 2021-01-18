@@ -11,7 +11,7 @@ tags: Physics 物理
 The maximum stress criterion, also known as the normal stress, Coulomb, or Rankine criterion, is often used to predict the failure of brittle materials.
 The maximum stress criterion states that failure occurs when the maximum (normal) principal stress reaches either the uniaxial tension strength st, or the uniaxial compression strength sc,
 
-$-s_{c}<\left\{s_{1}, s_{2}\right\}<s_{t}$
+$$-s_{c}<\left\{s_{1}, s_{2}\right\}<s_{t}$$
 
 where $s_{1}$ and $s_{2}$ are the principal stresses for 2D stress.
 
