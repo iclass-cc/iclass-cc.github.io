@@ -20,11 +20,11 @@ $$\begin{align} \text{div}\, F &= P_x + Q_y + R_z \\
 
 Note the divergence of a vector field is not a vector field, but a scalar function. In terms of the gradient operator
 
-$$\vecs \nabla = \langle \dfrac{\partial}{\partial x}, \dfrac{\partial}{\partial y}, \dfrac{\partial}{\partial z} \rangle$$
+$$\mathbf\nabla = \langle \dfrac{\partial}{\partial x}, \dfrac{\partial}{\partial y}, \dfrac{\partial}{\partial z} \rangle$$
 
 divergence can be written symbolically as the dot product
 
-$$\text{div}\, \vecs F = \vecs \nabla \cdot \mathbf{F}.$$
+$$\text{div}\, \mathbfF = \mathbf\nabla \cdot \mathbf{F}.$$
 
 ## Curl
 
