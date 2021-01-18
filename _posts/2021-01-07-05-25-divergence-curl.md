@@ -49,7 +49,7 @@ $$\text{div}(\langle -y,x \rangle ) = \dfrac{\partial}{\partial x} (-y) + \dfrac
 
 ![Figure 1](https://tenetai.com/iclass/d1.jpg)
 
-> Figure 1: (a) Vector field ⟨1,2⟩ has zero divergence. (b) Vector field ⟨−𝑦,𝑥⟩ also has zero divergence.
+> Figure 1: (a) Vector field ⟨1, 2⟩ has zero divergence. (b) Vector field ⟨−𝑦, 𝑥⟩ also has zero divergence.
 
 By contrast, consider radial vector field $\vec{R}(x, y)=\langle-x,-y\rangle$ in Figure 2. At any given point, more fluid is flowing in than is flowing out, and therefore the “outgoingness” of the field is negative. We expect the divergence of this field to be negative, and this is indeed the case, as
 
