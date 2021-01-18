@@ -31,7 +31,7 @@ $$\operatorname{div} \overrightarrow{\mathbf{F}}=\vec{\nabla} \cdot \overrightar
 
 Note this is merely helpful notation, because the dot product of a vector of operators and a vector of functions is not meaningfully defined given our current definition of dot product.
 
-If $\overrightarrow{\mathbf{F}}$ = \langle P,Q \rangle$ is a vector field in $\mathbb{R}^2$ , and $P_{x}$ and $Q_{y}$ both exist, then the divergence of $\overrightarrow{\mathbf{F}}$ is defined similarly as
+If $\overrightarrow{\mathbf{F}} = \langle P,Q \rangle$ is a vector field in $\mathbb{R}^2$ , and $P_{x}$ and $Q_{y}$ both exist, then the divergence of $\overrightarrow{\mathbf{F}}$ is defined similarly as
 
 $$\begin{aligned}
 \operatorname{div} \overrightarrow{\mathbf{F}} &=P_{x}+Q_{y} \\
@@ -98,7 +98,7 @@ $$\left(R_{y}-Q_{z}\right) \hat{\mathbf{i}}-\left(R_{x}-P_{z}\right) \hat{\mathb
 
 Thus, this matrix is a way to help remember the formula for curl. Keep in mind, though, that the word determinant is used very loosely. A determinant is not really defined on a matrix with entries that are three vectors, three operators, and three functions.
 
-If $\overrightarrow{\mathbf{F}}$ = \langle P,Q \rangle$ is a vector field in $\mathbb{R}^2$ , then the curl of $\overrightarrow{\mathbf{F}}$ , by definition, is
+If $\overrightarrow{\mathbf{F}} = \langle P,Q \rangle$ is a vector field in $\mathbb{R}^2$ , then the curl of $\overrightarrow{\mathbf{F}}$ , by definition, is
 
 $$\operatorname{curl} \overrightarrow{\mathbf{F}}=\left(Q_{x}-P_{y}\right) \hat{\mathbf{k}}=\left(\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y}\right) \hat{\mathbf{k}}$$
 
