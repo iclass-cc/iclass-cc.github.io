@@ -14,7 +14,7 @@ If $\overrightarrow{\mathbf{F}}$ represents the velocity of a fluid, then the di
 
 ### Definition: divergence in $\mathbb{R}^3$
 
-If $\overrightarrow{\mathbf{F}}$ = \langle P,Q,R \rangle$ is a vector field in $\mathbb{R}^3$ and $P_x, \, Q_y,$ and $R_z$ all exist, then the divergence of $\mathbf{F} is defined by
+If $\overrightarrow{\mathbf{F}} = \langle P,Q,R \rangle$ is a vector field in $\mathbb{R}^3$ and $P_x, \, Q_y,$ and $R_z$ all exist, then the divergence of $\mathbf{F} is defined by
 
 $$\begin{aligned}
 \operatorname{div} F &=P_{x}+Q_{y}+R_{z} \\
@@ -59,11 +59,11 @@ $$\operatorname{div}(\overrightarrow{\mathbf{R}})=\frac{\partial}{\partial x}(-x
 
 > Figure 2: This vector field has negative divergence.
 
-To get a global sense of what divergence is telling us, suppose that a vector field in $\mathbb{R}^2$ represents the velocity of a fluid. Imagine taking an elastic circle (a circle with a shape that can be changed by the vector field) and dropping it into a fluid. If the circle maintains its exact area as it flows through the fluid, then the divergence is zero. This would occur for both vector fields in Figure 1. On the other hand, if the circle’s shape is distorted so that its area shrinks or expands, then the divergence is not zero. Imagine dropping such an elastic circle into the radial vector field in Figure 2 so that the center of the circle lands at point (3,3). The circle would flow toward the origin, and as it did so the front of the circle would travel more slowly than the back, causing the circle to “scrunch” and lose area. This is how you can see a negative divergence.
+To get a global sense of what divergence is telling us, suppose that a vector field in $\mathbb{R}^2$ represents the velocity of a fluid. Imagine taking an elastic circle (a circle with a shape that can be changed by the vector field) and dropping it into a fluid. If the circle maintains its exact area as it flows through the fluid, then the divergence is zero. This would occur for both vector fields in Figure 1. On the other hand, if the circle’s shape is distorted so that its area shrinks or expands, then the divergence is not zero. Imagine dropping such an elastic circle into the radial vector field in Figure 2 so that the center of the circle lands at point (3, 3). The circle would flow toward the origin, and as it did so the front of the circle would travel more slowly than the back, causing the circle to “scrunch” and lose area. This is how you can see a negative divergence.
 
 ## Curl
 
-The second operation on a vector field that we examine is the curl, which measures the extent of rotation of the field about a point. Suppose that $\mathbf{F}$ represents the velocity field of a fluid. Then, the curl of $\mathbf{F}$ at point $P$ is a vector that measures the tendency of particles near $P$ to rotate about the axis that points in the direction of this vector. The magnitude of the curl vector at $P$ measures how quickly the particles rotate around this axis. In other words, the curl at a point is a measure of the vector field’s “spin” at that point. Visually, imagine placing a paddlewheel into a fluid at $P$ , with the axis of the paddlewheel aligned with the curl vector (Figure below). The curl measures the tendency of the paddlewheel to rotate.
+The second operation on a vector field that we examine is the curl, which measures the extent of rotation of the field about a point. Suppose that $\mathbf{F}$ represents the velocity field of a fluid. Then, the curl of $\mathbf{F}$ at point $P$ is a vector that measures the tendency of particles near $P$ to rotate about the axis that points in the direction of this vector. The magnitude of the curl vector at $P$ measures how quickly the particles rotate around this axis. In other words, the curl at a point is a measure of the vector field’s “spin” at that point. Visually, imagine placing a paddlewheel into a fluid at $P$ , with the axis of the paddlewheel aligned with the curl vector (Figure 3). The curl measures the tendency of the paddlewheel to rotate.
 
 ![Figure Curl](https://tenetai.com/iclass/c1.jpg)
 
