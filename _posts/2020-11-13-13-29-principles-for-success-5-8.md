@@ -5,6 +5,9 @@ date: 2020-11-13 13:29 +0800
 tags: Language 语言学习 英语
 ---
 
-
+- Everything is a Machine
+- Your Two Biggest Barriers
+- Be Radically Open-Minded
+- Struggle Well
 
 <!--more-->
