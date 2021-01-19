@@ -1,6 +1,6 @@
 ---
-key: 2020-11-12-16-01-election
-title: Outsmart A Troll 选举公平
+key: 2020-11-12-16-01-disinformation
+title: Disinformation 虚假信息
 date: 2020-11-12 16:01 +0800
 tags: Language 语言学习 英语
 ---
