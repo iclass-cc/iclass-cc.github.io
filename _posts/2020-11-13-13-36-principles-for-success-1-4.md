@@ -5,7 +5,7 @@ date: 2020-11-13 13:36 +0800
 tags: Language 语言学习 英语
 ---
 
-- by Ray Dalio
+- by **Ray Dalio**
 
 ## The Call to Adventure
 
