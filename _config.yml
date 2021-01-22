@@ -80,7 +80,7 @@ paginate_path: /page:num # don't change this unless for special need
 
 ## => Sources
 ##############################
-sources: bootcdn # bootcdn (default), unpkg
+sources: unpkg # bootcdn (default), unpkg
 
 ## => Sharing
 ##############################
@@ -126,9 +126,9 @@ pageview:
 
   ## Leancloud
   leancloud:
-    app_id    : # LeanCloud App id
-    app_key   : # LeanCloud App key
-    app_class : # LeanCloud App class
+    app_id    : 5I87QzynU5fG78I3F9gOUc1o-gzGzoHsz # LeanCloud App id
+    app_key   : fo54aCv5YNoauTs3KxQ2Wmnf # LeanCloud App key
+    app_class : iclass # LeanCloud App class
 
 ## => Search
 ##############################
