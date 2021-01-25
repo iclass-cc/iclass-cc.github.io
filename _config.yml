@@ -117,7 +117,7 @@ comments:
     app_key     : fo54aCv5YNoauTs3KxQ2Wmnf # LeanCloud App key
     placeholder : iClass # Prompt information
     visitor     : # false (default)
-    meta        : [iClass, i@bbc.llc, https://iclass.cc/] # "[nick, mail, link]" (default) nickname, E-mail, Personal-site
+    meta        : # "[nick, mail, link]" (default) nickname, E-mail, Personal-site
 
 ## => Pageview
 ##############################
