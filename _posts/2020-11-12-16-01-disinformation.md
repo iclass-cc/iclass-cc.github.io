@@ -7,7 +7,7 @@ tags: Language 语言学习 英语
 
 <div>{%- include extensions/ted.html id='claire_wardle_can_you_outsmart_a_troll_by_thinking_like_one' -%}</div>
 
-- By Claire Wardle
+- by **Claire Wardle**
 
 Too often, we share posts on social media without thinking. We’re standing in line at a coffee shop or scrolling mindlessly during our morning commute. The minute we see something that resonates – it might make us laugh, angry or even smug – we click on the ‘share’ or retweet button, and carry on scrolling. It’s often a split second decision. It feels like it carries little weight. But those split second decisions can have repercussions.
 
