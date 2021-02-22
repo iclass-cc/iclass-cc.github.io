@@ -104,7 +104,7 @@ comments:
   # please refer to https://github.com/gitalk/gitalk for more info.
   gitalk:
     clientID    : 1c7643ca40f058f6e93a # GitHub Application Client ID
-    clientSecret: cd71d1762302970bb5b98adef0e65c88f8fd1425 # GitHub Application Client Secret
+    clientSecret: 9a6dfbf12d11b435f717dd65181e8b9b8c244fc8 # GitHub Application Client Secret
     repository  : iclass-cc.github.io # GitHub repo
     owner       : iclass-cc # GitHub repo owner
     admin: iclass-cc # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
