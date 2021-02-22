@@ -1,7 +1,7 @@
 ---
-key: 2021-02-22-22-22-butterfly-effect
+key: 2021-02-22-22-07-butterfly-effect
 title: Butterfly Effect 蝴蝶效应
-date: 2021-02-22 22:22 +0800
+date: 2021-02-22 22:07 +0800
 tags: Physics 物理 Chaos
 ---
 
