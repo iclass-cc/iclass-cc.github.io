@@ -5,7 +5,7 @@ date: 2020-11-15 17:35 +0800
 tags: Economics 经济
 ---
 
-Debt restructuring is a process used by companies to avoid the risk of default on existing debt or lower available interest rates. Individuals on the brink of insolvency also restructure their debt as do countries that are heading for a default on sovereign debt.
+**Debt restructuring** is a process used by companies to avoid the risk of default on existing debt or lower available interest rates. Individuals on the brink of insolvency also restructure their debt as do countries that are heading for a default on sovereign debt.
 
 - The debt restructuring process can reduce the interest rates on loans or extend the due dates for a company’s liabilities.
 - A debt restructure might include a debt-for-equity swap, in which creditors agree to cancel a portion or all of the outstanding debt in exchange for equity.
