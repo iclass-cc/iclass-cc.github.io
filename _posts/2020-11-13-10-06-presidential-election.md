@@ -9,6 +9,20 @@ In the U.S., no one is required by law to vote in any local, state, or president
 
 The [election process](http://www.loc.gov/teachers/classroommaterials/presentationsandactivities/presentations/elections/election-process.html) begins with [primary elections and caucuses](https://www.usa.gov/election#item-37162). These are two methods that states use to select a potential presidential nominee tooltip . In general, primaries use secret ballots for voting. Caucuses are local gatherings of voters who vote at the end of the meeting for a particular candidate. Then it moves to nominating conventions, during which political parties each select a nominee to unite behind. During a political party convention, each presidential nominee also announces a vice presidential running mate. The candidates then campaign across the country to explain their views and plans to voters. They may also participate in debates with candidates from other parties.
 
+![Presidential Election Process](https://tenetai.com/iclass/ele.jpg)
+
+The presidential election process follows a typical cycle:
+
+- Spring of the year before an election – Candidates announce their intentions to run. 
+- Summer of the year before an election through spring of the election year – Primary and caucus tooltip  debates take place. 
+- January to June of election year – States and parties hold primaries tooltip and caucuses. 
+- July to early September – Parties hold nominating conventions to choose their candidates. 
+- September and October – Candidates participate in presidential debates. 
+- Early November – Election Day 
+- December – Electors tooltip  cast their votes in the Electoral College. 
+- Early January of the next calendar year – Congress counts the electoral votes. 
+- January 20 – Inauguration Day 
+
 In 2020, Biden's victory capped one of the longest and most tumultuous campaigns in modern history, in which he maintained an aggressive focus on Trump's handling of the pandemic.
 
 ![Electoral Votes](https://tenetai.com/iclass/el.jpg)
