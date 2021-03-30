@@ -21,10 +21,6 @@ The presidential election process follows a typical cycle:
 - Early November – Election Day 
 - December – Electors tooltip  cast their votes in the Electoral College. 
 - Early January of the next calendar year – Congress counts the electoral votes. 
-- January 20 – Inauguration Day 
-
-In 2020, Biden's victory capped one of the longest and most tumultuous campaigns in modern history, in which he maintained an aggressive focus on Trump's handling of the pandemic.
-
-![Electoral Votes](https://tenetai.com/iclass/2020.jpg)
+- January 20 – Inauguration Day
 
 <!--more-->
