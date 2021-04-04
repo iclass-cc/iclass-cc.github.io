@@ -2,7 +2,7 @@
 key: 2020-12-12-15-16-microservices
 title: Microservices 微服务架构
 date: 2020-12-12 15:16 +0800
-tags: Computer Science 计算机科学
+tags: Computer Science 计算机科学 Software 软件
 ---
 
 ![Microservices](https://tenetai.com/iclass/m.png)
@@ -18,7 +18,7 @@ A consensus view has evolved over time in the industry. Some of the defining cha
 
 A microservice is not a layer within a monolithic application (example, the web controller, or the backend-for-frontend). Rather it is a self-contained piece of business functionality with clear interfaces, and may, through its own internal components, implement a layered architecture. From a strategy perspective, microservices architecture essentially follows the Unix philosophy of "Do one thing and do it well".
 
-Martin Fowler describes a microservices-based architecture as having the following properties:
+[Martin Fowler](https://martinfowler.com) describes a microservices-based architecture as having the following properties:
 
 - Lends itself to a continuous delivery software development process. A change to a small part of the application only requires rebuilding and redeploying only one or a small number of services.
 - Adheres to principles such as fine-grained interfaces (to independently deployable services), business-driven development (e.g. domain-driven design).
