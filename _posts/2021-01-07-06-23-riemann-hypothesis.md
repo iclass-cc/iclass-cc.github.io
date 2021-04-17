@@ -13,7 +13,7 @@ tags: Math 数学
 - Other than the “trivial zeros” along the negative real axis,
 - all the solutions to the Riemann zeta function must lie in the critical strip of complex numbers whose 
 - real part is between 0 and 1. The Riemann hypothesis is that all these nontrivial zeros actually lie on 
-- the critical line, or Re(S) = 1/2.
+- the critical line, or $Re(S) = 1/2$.
 
 The zeta function is defined as the infinite series
 
@@ -29,7 +29,7 @@ Euler achieved instant fame when he proved in 1735 that $ζ(2) = π^{2}/6$, a pr
 
 $$\zeta(s)=\sum_{n=1}^{\infty} \frac{1}{n^{s}}=\prod_{p} \frac{1}{1-p^{-s}}$$
 
-Riemann extended the study of the zeta function to include the complex numbers $x + iy$, where $i = \sqrt−1$, except for the line $x = 1$ in the complex plane. Riemann knew that the zeta function equals zero for all negative even integers −2, −4, −6, … (so-called trivial zeros) and that it has an infinite number of zeros in the critical strip of complex numbers that fall strictly between the lines $x = 0$ and $x = 1$. He also knew that all nontrivial zeros are symmetric with respect to the critical line $x = 1/2$. Riemann conjectured that all of the nontrivial zeros are on the critical line, a conjecture that subsequently became known as the Riemann hypothesis.
+Riemann extended the study of the zeta function to include the complex numbers $x + iy$, where $i = \sqrt{−1}$, except for the line $x = 1$ in the complex plane. Riemann knew that the zeta function equals zero for all negative even integers −2, −4, −6, … (so-called trivial zeros) and that it has an infinite number of zeros in the critical strip of complex numbers that fall strictly between the lines $x = 0$ and $x = 1$. He also knew that all nontrivial zeros are symmetric with respect to the critical line $x = 1/2$. Riemann conjectured that all of the nontrivial zeros are on the critical line, a conjecture that subsequently became known as the Riemann hypothesis.
 
 In 1914 English mathematician Godfrey Harold Hardy proved that an infinite number of solutions of $ζ(s) = 0$ exist on the critical line $x = 1/2$. Subsequently it was shown by various mathematicians that a large proportion of the solutions must lie on the critical line, though the frequent “proofs” that all the nontrivial solutions are on it have been flawed. Computers have also been used to test solutions, with the first 10 trillion nontrivial solutions shown to lie on the critical line.
 
