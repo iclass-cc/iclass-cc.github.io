@@ -1,6 +1,6 @@
 ---
 key: 2021-01-16-07-13-photonic-quantum
-title: Photonic Quantum Computer 光量子
+title: Photonic Quantum 光量子
 date: 2021-01-16 07:13 +0800
 tags: Computer Science 计算机科学
 ---
