@@ -1,6 +1,6 @@
 ---
-key: 2021-01-04-03-04-colored-pencils-drawing
-title: Colored Pencils Drawing 彩铅绘画
+key: 2021-01-04-03-04-colored-pencils
+title: Colored Pencils 彩铅
 date: 2021-01-04 03:04 +0800
 tags: Art 艺术
 ---
