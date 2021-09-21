@@ -35,7 +35,9 @@ show_title: false
 
 真正的课堂往往不在教室里，不在学校里，就在你那颗爱学习的心里面。
 
-（这个网站的内容更新将与微信视频号 “**爱课**” 的视频更新保持基本同步）
+> 这个网站的内容更新与微信视频号 “**爱课**” 的视频更新保持基本同步。
+
+<img src="https://tenetai.com/iclass/wx.jpg" width="222" align="left">
 
 **iClass** is a learning platform with English and Chinese as the main languages.
 
