@@ -44,6 +44,6 @@ show_title: false
 After you have a certain foundation in English,
 you can use English as a medium to try to learn all kinds of new knowledge.
 
-Hope you can fall in love with learning.
+Hope you will love the classroom online.
 
-The real classroom is often not in the classroom, not in the school, it is in your love to learn.
+The real classroom is often not in the classroom, not in the school, but in your heart that loves to learn.
