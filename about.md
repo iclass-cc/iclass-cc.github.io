@@ -37,7 +37,7 @@ show_title: false
 
 > 这个网站的内容更新与微信视频号 “**爱课**” 的视频更新保持基本同步。
 
-<img src="https://tenetai.com/iclass/wx.jpg" width="222" align="left">
+<img src="https://tenetai.com/iclass/wx.jpg" width="303">
 
 **iClass** is a learning platform with English and Chinese as the main languages.
 
