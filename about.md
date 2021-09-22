@@ -31,13 +31,13 @@ show_title: false
 
 当你有了一定的英语基础之后，你可以以英语为媒介，尝试学习各种新知识。
 
-希望你能爱上`学习`，爱上`在线课堂`。
+希望你能爱上*学习*，爱上*在线课堂*。
 
-真正的`课堂`往往不在`教室`里，不在`学校`里，就在你那颗爱学习的`心`里面。
+真正的*课堂*往往不在*教室*里，不在*学校*里，就在你那颗爱学习的心里面。
 
 > 这个网站的内容更新与微信视频号 “**爱课**” 的视频更新保持基本同步。
 
-<img src="https://tenetai.com/iclass/wx.jpg" width="323">
+<img src="https://tenetai.com/iclass/wx.jpg" width="343">
 
 **iClass** is a learning platform with English and Chinese as the main languages.
 
