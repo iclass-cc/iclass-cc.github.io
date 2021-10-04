@@ -14,7 +14,7 @@ A simple stylized diagram of the refrigeration cycle:
 - 3) evaporator coil
 - 4) compressor
 
-![refrigeration cycle](https://tenetai.com/iclass/air.svg)
+![refrigeration cycle](/assets/images/air.svg)
 
 > [Watch this video](https://www.youtube.com/watch?v=nVo0GuNm3Ek)
 

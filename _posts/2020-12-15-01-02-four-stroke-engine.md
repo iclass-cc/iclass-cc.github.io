@@ -37,7 +37,7 @@ It is a device that delivers electric current to the combustion chamber which ig
 
 The four strokes of the engine go by the following names:
 
-![4 Stroke](https://tenetai.com/iclass/4se.jpg)
+![4 Stroke](/assets/images/4se.jpg)
 
 ### Suction/Intake Stroke
 

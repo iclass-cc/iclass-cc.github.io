@@ -5,7 +5,7 @@ date: 2020-12-12 15:16 +0800
 tags: Computer Science 计算机科学 Software
 ---
 
-![Microservices](https://tenetai.com/iclass/m.png)
+![Microservices](/assets/images/m.png)
 
 Microservice architecture – a variant of the service-oriented architecture (SOA) structural style – arranges an application as a collection of loosely coupled services. In a microservices architecture, services are fine-grained and the protocols are lightweight.
 

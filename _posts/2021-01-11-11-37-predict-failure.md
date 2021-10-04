@@ -17,7 +17,7 @@ where $s_{1}$ and $s_{2}$ are the principal stresses for 2D stress.
 
 Graphically, the maximum stress criterion requires that the two principal stresses lie within the green zone depicted below,
 
-![Figure 1](https://tenetai.com/iclass/f1.gif)
+![Figure 1](/assets/images/f1.gif)
 
 ### Mohr's Theory
 
@@ -25,7 +25,7 @@ The **Mohr Theory of Failure**, also known as the Coulomb-Mohr criterion or inte
 
 Mohr's theory suggests that failure occurs when Mohr's Circle at a point in the body exceeds the envelope created by the two Mohr's circles for uniaxial tensile strength and uniaxial compression strength. This envelope is shown in the figure below,
 
-![Figure 2](https://tenetai.com/iclass/f2.gif)
+![Figure 2](/assets/images/f2.gif)
 
 The left circle is for uniaxial compression at the limiting compression stress sc of the material. Likewise, the right circle is for uniaxial tension at the limiting tension stress st.
 
@@ -33,11 +33,11 @@ The middle Mohr's Circle on the figure (dash-dot-dash line) represents the maxim
 
 All intermediate stress states fall into one of the four categories in the following table. Each case defines the maximum allowable values for the two principal stresses to avoid failure.
 
-![Table 1](https://tenetai.com/iclass/t1.jpg)
+![Table 1](/assets/images/t1.jpg)
 
 Graphically, Mohr's theory requires that the two principal stresses lie within the green zone depicted below,
 
-![Figure 3](https://tenetai.com/iclass/f3.gif)
+![Figure 3](/assets/images/f3.gif)
 
 Also shown on the figure is the [maximum stress](#maximum-normal-stress-criterion) criterion (dashed line). This theory is less conservative than Mohr's theory since it lies outside Mohr's boundary.
 
@@ -57,7 +57,7 @@ Also shown on the figure is the [maximum stress](#maximum-normal-stress-criterio
 
 > Let’s start with the Tresca failure criterion, which is also called the maximum shear stress theory. It is named after the French engineer Henri Tresca, and it states that yielding occurs when the maximum shear stress is equal to the shear stress at yielding in a tensile test. This can be defined mathematically, like this. And graphically using Mohr’s circle, like this. This theory is consistent with the observation that hydrostatic stresses don’t affect yield. It doesn't care where Mohr’s circle is located on the horizontal axis. It’s common to express this theory as a function of the principal stresses, instead of as a function of the shear stresses. We can see based on Mohr’s circle for a tri-axial stress state that the maximum shear stress is equal to the radius of the outer circle, which is the difference between the maximum and minimum principal stresses, divided by 2. Mohr's circle for a uniaxial tensile test at yielding looks like this. The intermediate and minimum principal stresses 𝞼₂ and 𝞼₃ are equal to zero, and the maximum principal stress 𝞼₁ is equal to the yield strength of the material. The shear stress at yielding is equal to half of the yield strength of the material, so we can re-write our equation to obtain the standard formulation for the Tresca theory.
 
-![Coulomb-Mohr](https://tenetai.com/iclass/tresca.jpg)
+![Coulomb-Mohr](/assets/images/tresca.jpg)
 
 > Let’s look at the von Mises failure criterion next, which is also called the maximum distortion energy theory. It was initially developed by the Austrian scientist Richard von Mises, but a number of others were involved in refining it, so it is sometimes called the Maxwell–Huber–Hencky–von Mises theory. It states that yielding occurs when the maximum distortion energy in a material is equal to the distortion energy at yielding in a uniaxial tensile test.
 
@@ -79,7 +79,7 @@ Also shown on the figure is the [maximum stress](#maximum-normal-stress-criterio
 
 > Coulomb-Mohr theory states that a material will fail for a stress-state with a Mohr’s circle that reaches this envelope. The Tresca yield criterion we saw earlier is actually a special case of the Coulomb-Mohr failure theory, where we have the same material properties in tension and in compression. The plane stress failure surface for Coulomb-Mohr theory looks like this.
 
-![Coulomb-Mohr](https://tenetai.com/iclass/mohr.jpg)
+![Coulomb-Mohr](/assets/images/mohr.jpg)
 
 > As you can see it doesn’t agree particularly well with experimental data in the bottom right quadrant. Modified Mohr theory is a slight variation on the theory, which better fits experimental data. It is one of the preferred general failure theories for brittle materials. Because failure theories for brittle materials need to account for the effect of hydrostatic stresses, these failure theories converge to a point when extended along the hydrostatic axis. And that’s it for this introduction to failure theories! We've covered the most common theories, but there are many more out there which may be more appropriate for specific scenarios.
 

@@ -47,7 +47,7 @@ and
 
 $$\text{div}(\langle -y,x \rangle ) = \dfrac{\partial}{\partial x} (-y) + \dfrac{\partial}{\partial y} (x) = 0.$$
 
-![Figure 1](https://tenetai.com/iclass/d1.jpg)
+![Figure 1](/assets/images/d1.jpg)
 
 > Figure 1: (a) Vector field ⟨1, 2⟩ has zero divergence. (b) Vector field ⟨−𝑦, 𝑥⟩ also has zero divergence.
 
@@ -55,7 +55,7 @@ By contrast, consider radial vector field $\vec{R}(x, y)=\langle-x,-y\rangle$ in
 
 $$\operatorname{div}(\vec{R})=\frac{\partial}{\partial x}(-x)+\frac{\partial}{\partial y}(-y)=-2$$
 
-![Figure 2](https://tenetai.com/iclass/d2.jpg)
+![Figure 2](/assets/images/d2.jpg)
 
 > Figure 2: This vector field has negative divergence.
 
@@ -65,7 +65,7 @@ To get a global sense of what divergence is telling us, suppose that a vector fi
 
 The second operation on a vector field that we examine is the curl, which measures the extent of rotation of the field about a point. Suppose that $\vec{F}$ represents the velocity field of a fluid. Then, the curl of $\vec{F}$ at point $P$ is a vector that measures the tendency of particles near $P$ to rotate about the axis that points in the direction of this vector. The magnitude of the curl vector at $P$ measures how quickly the particles rotate around this axis. In other words, the curl at a point is a measure of the vector field’s “spin” at that point. Visually, imagine placing a paddlewheel into a fluid at $P$ , with the axis of the paddlewheel aligned with the curl vector (Figure 3). The curl measures the tendency of the paddlewheel to rotate.
 
-![Figure Curl](https://tenetai.com/iclass/c1.jpg)
+![Figure Curl](/assets/images/c1.jpg)
 
 > Figure 3: To visualize curl at a point, imagine placing a small paddlewheel into the vector field at a point.
 
