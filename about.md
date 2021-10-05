@@ -37,8 +37,6 @@ show_title: false
 
 > 这个网站的内容更新与微信视频号 “**爱课**” 的视频更新保持基本同步。
 
-<img src="/assets/images/wx.jpg" width="343">
-
 **iClass** is a learning platform with English and Chinese as the main languages.
 
 After you have a certain foundation in English,
