@@ -35,8 +35,6 @@ show_title: false
 
 真正的**课堂**往往不在**教室**里，不在**学校**里，就在你那颗爱学习的❤️里面。
 
-> 这个网站的内容更新与微信视频号 “**爱课**” 的视频更新保持基本同步。
-
 **iClass** is a learning platform with English and Chinese as the main languages.
 
 After you have a certain foundation in English,
