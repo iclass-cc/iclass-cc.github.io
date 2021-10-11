@@ -5,6 +5,8 @@ date: 2020-11-13 13:29 +0800
 tags: Language 语言学习 英语
 ---
 
+![machine](https://quotefancy.com/media/wallpaper/3840x2160/6099114-Ray-Dalio-Quote-Almost-everything-is-like-a-machine.jpg)
+
 - by **Ray Dalio**
 
 ## Everything is a Machine
