@@ -5,6 +5,8 @@ date: 2020-11-13 13:36 +0800
 tags: Language 语言学习 英语
 ---
 
+![adventure](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Heroesjourney.svg/1920px-Heroesjourney.svg.png)
+
 - by **Ray Dalio**
 
 ## The Call to Adventure
