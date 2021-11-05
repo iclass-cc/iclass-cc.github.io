@@ -27,10 +27,10 @@ key: page-about
 show_title: false
 ---
 
-**iClass** is a learning platform with English as the main languages.
+**iClass** is a learning platform with English as the main language.
 
-After you have a certain foundation in English,
-you can use English as a medium to try to learn all kinds of new knowledge.
+Once you have some basic knowledge of English,
+you can use it as a medium to try to learn all kinds of new things.
 
 Hope you will love the classroom online.
 
