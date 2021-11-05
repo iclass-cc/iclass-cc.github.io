@@ -32,14 +32,14 @@ show_title: false
 Once you have some basic knowledge of English,
 you can use it as a medium to try to learn all kinds of new things.
 
-Hope you will love the classroom online.
+Hope you will love learning and love online classes.
 
-The real classroom is often not in the classroom, not in the school, but in your heart that loves to learn.
+The real classroom is often not in the classroom, not in the school, it's inside your heart that loves to learn.
 
 > **爱课** 是以英语为主要语言的学习平台。
 > 当你有了一定的英语基础之后，你可以以英语为媒介，尝试学习各种新知识。
 > 希望你能爱上**学习**，爱上**在线课堂**。
-> 真正的**课堂**往往不在**教室**里，不在**学校**里，就在你那颗爱学习的❤️里面。
+> 真正的**课堂**往往不在**教室**里，不在**学校**里，就在你那颗爱学习的心里面。
 
 > **iClass** 는 영어를 주 언어로 하는 학습 플랫폼입니다.
 > 영어에 대한 기본적인 지식이 있으면 모든 종류의 새로운 것을 배우기 위한 매개체로 사용할 수 있습니다.
