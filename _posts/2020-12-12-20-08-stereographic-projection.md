@@ -12,6 +12,51 @@ Intuitively, then, the stereographic projection is a way of picturing the sphere
 
 <img src="/assets/images/projection.gif" width="444">
 
+Stereographic projections have a very simple algebraic form that results immediately from similarity of triangles. In the above figures, let the stereographic sphere have radius r, and the z-axis positioned as shown. Then a variety of different transformation formulas are possible depending on the relative positions of the projection plane and z-axis.
+
+The transformation equations for a sphere of radius R are given by
+
+$$
+\begin{aligned}
+&x=k \cos \phi \sin \left(\lambda-\lambda_{0}\right) \\
+&y=k\left[\cos \phi_{1} \sin \phi-\sin \phi_{1} \cos \phi \cos \left(\lambda-\lambda_{0}\right)\right]
+\end{aligned}
+$$
+
+where $\lambda_{0}$ is the central longitude, $\phi_{1}$ is the central latitude, and
+
+$$
+k=\frac{2 R}{1+\sin \phi_{1} \sin \phi+\cos \phi_{1} \cos \phi \cos \left(\lambda-\lambda_{0}\right)}
+$$
+
+The inverse formulas for latitude $\phi$ and longitude $\lambda$ are then given by
+
+$$
+\begin{aligned}
+&\phi=\sin ^{-1}\left(\cos c \sin \phi_{1}+\frac{y \sin c \cos \phi_{1}}{\rho}\right) \\
+&\lambda=\lambda_{0}+\tan ^{-1}\left(\frac{x \sin c}{\rho \cos \phi_{1} \cos c-y \sin \phi_{1} \sin c}\right)
+\end{aligned}
+$$
+
+where
+
+$$
+\begin{aligned}
+&\rho=\sqrt{x^{2}+y^{2}} \\
+&c=2 \tan ^{-1}\left(\frac{\rho}{2 R}\right)
+\end{aligned}
+$$
+
+and the two-argument form of the [inverse tangent](https://mathworld.wolfram.com/InverseTangent.html) function is best used for this computation.
+
+For an [oblate spheroid](https://mathworld.wolfram.com/OblateSpheroid.html), $R$ can be interpreted as the "local radius," defined by
+
+$$
+R=\frac{R_{e} \cos \phi}{\left(1-e^{2} \sin ^{2} \phi\right) \cos \chi}
+$$
+
+where $R_{e}$ is the equatorial radius and $\chi$ is the [conformal latitude](https://mathworld.wolfram.com/ConformalLatitude.html).
+
 通过球心的面在赤平面上的投影称为大圆，未通过球心的面在赤平面上的投影称为小圆。
 
 由于构造特点各不相同，为了清楚反映构造起见，采用两种不同的投影方法：
