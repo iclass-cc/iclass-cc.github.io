@@ -1,9 +1,16 @@
 ---
+mathjax: true
 key: 2020-12-12-20-08-stereographic-projection
 title: Stereographic Projection 球面投影
 date: 2020-12-12 20:08 +0800
 tags: Math 数学
 ---
+
+In geometry, the **stereographic projection** is a particular mapping (function) that projects a sphere onto a plane. The projection is defined on the entire sphere, except at one point: the projection point. Where it is defined, the mapping is smooth and bijective. It is conformal, meaning that it preserves angles at which curves meet. It is neither isometric nor area-preserving: that is, it preserves neither distances nor the areas of figures.
+
+Intuitively, then, the stereographic projection is a way of picturing the sphere as the plane, with some inevitable compromises. Because the sphere and the plane appear in many areas of mathematics and its applications, so does the stereographic projection; it finds use in diverse fields including complex analysis, cartography, geology, and photography. In practice, the projection is carried out by computer or by hand using a special kind of graph paper called a stereographic net, shortened to stereonet, or Wulff net.
+
+<img src="/assets/images/projection.gif" width="444">
 
 通过球心的面在赤平面上的投影称为大圆，未通过球心的面在赤平面上的投影称为小圆。
 
