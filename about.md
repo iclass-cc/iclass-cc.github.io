@@ -53,6 +53,6 @@ The real classroom is often not in the classroom, not in the school, it's inside
 
 Partners' sites:
 
-- [88o.io](https://88o.io)
+- [88°.io](https://88o.io)
 - [TenetAi.in](https://TenetAi.in)
 - [MarsLink.in](https://MarsLink.in)
