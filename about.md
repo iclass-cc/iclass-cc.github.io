@@ -50,3 +50,9 @@ The real classroom is often not in the classroom, not in the school, it's inside
 > 英語の基礎知識が身に付いたら、それを媒体として使って、あらゆる種類の新しいことを学ぼうとすることができます。
 > あなたがオンラインで教室を気に入るといいのですが。
 > 実際の教室は、多くの場合、教室ではなく、学校ではなく、学ぶことを愛するあなたの心の中にあります。
+
+Partners' sites:
+
+- [88o.io](https://88o.io)
+- [TenetAi.in](https://TenetAi.in)
+- [MarsLink.in](https://MarsLink.in)
