@@ -92,22 +92,11 @@ sharing:
 ## => Comments
 ##############################
 comments:
-  provider: gitalk # false (default), "disqus", "gitalk", "valine", "custom"
+  provider: disqus
 
   ## Disqus
   disqus:
-    shortname:  # the Disqus shortname for the site
-
-  ## Gitalk
-  # please refer to https://github.com/gitalk/gitalk for more info.
-  gitalk:
-    clientID: 1c7643ca40f058f6e93a # GitHub Application Client ID
-    clientSecret: e9f520a9d24458505f7bbbce87c0b2873ee4d6db # GitHub Application Client Secret
-    repository: iclass-cc.github.io # GitHub repo
-    owner: iclass-cc # GitHub repo owner
-    proxy: https://cors.bridged.cc/https://github.com/login/oauth/access_token
-    admin: iclass-cc # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
-      # - your GitHub Id
+    shortname:  88oio
 
   ## Valine
   # please refer to https://valine.js.org/en/ for more info.
