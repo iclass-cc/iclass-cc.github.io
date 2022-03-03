@@ -18,6 +18,6 @@ SpaceX计划在三个轨道上部署接近12000颗卫星：
 “星链”始建于2018年2月22日，如果一切顺利，
 “星链”可以在全球范围内提供低成本的互联网连接服务。
 
-![Starlink](https://88o.io/assets/images/starlink.jpg)
+![Starlink](https://raw.githubusercontent.com/88oio/88oio.github.io/master/en/Starlink/starlink.jpg)
 
 <!--more-->
