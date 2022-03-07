@@ -16,8 +16,6 @@ A simple stylized diagram of the refrigeration cycle:
 
 ![refrigeration cycle](/assets/images/air.svg)
 
-> [Watch this video](https://www.youtube.com/watch?v=nVo0GuNm3Ek)
-
 > There are eight main components that play a pivotal role in cooling your home: A Thermostat, Condenser, Compressor, Fan, Metering Device, Evaporator, Blower and a Filter.
 
 > The first step begins with setting your thermostat to the desired temperature. This triggers the condenser fan and compressor to turn on. The compressor begins pumping a fluid called a 'refrigerant' throughout the system. This is used because of its low boiling point.
@@ -31,5 +29,7 @@ A simple stylized diagram of the refrigeration cycle:
 > The blower begins circulating air throughout the house. Room-temperature air is pulled in through the return duct and passes through the filter to remove particulates. The heat from the air is absorbed into the refrigerant inside the evaporator coil, dispersing chilled air through the supply duct.
 > As the air passes over the coil, the refrigerant is boiled and evaporates back into vapor form. During this process, condensation forms on the outside of the coil and exits through a condensate drain line.
 > The refrigerant returns to the condenser to disperse the collected heat outdoors, and the cycle starts again. Your home is slowly cooled, and the thermostat shuts off the equipment once it senses the desired temperature. 
+
+<div>{%- include extensions/youtube.html id='nVo0GuNm3Ek' -%}</div>
 
 <!--more-->

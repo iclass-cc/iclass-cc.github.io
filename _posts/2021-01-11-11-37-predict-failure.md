@@ -41,7 +41,7 @@ Graphically, Mohr's theory requires that the two principal stresses lie within t
 
 Also shown on the figure is the [maximum stress](#maximum-normal-stress-criterion) criterion (dashed line). This theory is less conservative than Mohr's theory since it lies outside Mohr's boundary.
 
-> [Watch this video](https://www.youtube.com/watch?v=xkbQnBAOFEg)
+<div>{%- include extensions/youtube.html id='xkbQnBAOFEg' -%}</div>
 
 > We know that when we apply loads to an object, like this bracket, if we keep increasing the magnitude of the load, at some point the material will fail. But how can we predict when static failure will occur? What level do the stresses in the object need to reach for it to fail? First we need to define what failure is. For ductile materials failure is usually considered to occur at the onset of plastic deformation. And for brittle materials it occurs at fracture. These points are easy to define for a uniaxial stress state, like a tensile test. They occur when the normal stress in the object reaches the yield strength of the material for ductile materials and the ultimate strength for brittle materials.
 
