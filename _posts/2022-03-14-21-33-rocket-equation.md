@@ -2,7 +2,7 @@
 mathjax: true
 pageview: true
 key: 2022-03-14-21-33-rocket-equation
-title: Rocket 火箭方程
+title: Rocket equation 火箭方程
 date: 2022-03-14 21:33 +0800
 tags: Physics 物理
 ---
