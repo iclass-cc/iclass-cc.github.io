@@ -279,7 +279,7 @@ $$
 \Delta v=v_{\mathrm{eff}} \sum_{j=1}^{j=N} \frac{\phi / N}{\sqrt{(1-j \phi / N)(1-j \phi / N+\phi / N)}}
 $$
 
-Notice that for large $N$ the last term in the denominator $phi / N \ll 1$ and can be neglected to give
+Notice that for large $N$ the last term in the denominator $\phi / N \ll 1$ and can be neglected to give
 
 $$
 \Delta v \approx v_{\mathrm{eff}} \sum_{j=1}^{j=N} \frac{\phi / N}{1-j \phi / N}=v_{\mathrm{eff}} \sum_{j=1}^{j=N} \frac{\Delta x}{1-x_{j}} \text { where } \Delta x=\frac{\phi}{N} \text { and } x_{j}=\frac{j \phi}{N}
