@@ -2,7 +2,7 @@
 mathjax: true
 pageview: true
 key: 2022-03-14-21-33-rocket-equation
-title: Rocket equation 火箭方程
+title: Rocket Equation 火箭方程
 date: 2022-03-14 21:33 +0800
 tags: Physics 物理
 ---
@@ -77,8 +77,8 @@ where
 
 ## Examples
 
-- Single-stage-to-orbit rocket: $1-e^{-9.7 / 4.5}=0.884$, therefore 88.4% of the initial total mass has to be propellant. The remaining 11.6% is for the engines, the tank, and the payload.
-- Two-stage-to-orbit: suppose that the first stage should provide a ${\Delta v}$ of 5,000 meters per second (16,000 $ft/s$); $1-e^{-5.0 / 4.5}=0.671$, therefore 67.1% of the initial total mass has to be propellant to the first stage. The remaining mass is 32.9%. After disposing of the first stage, a mass remains equal to this 32.9%, minus the mass of the tank and engines of the first stage. Assume that this is 8% of the initial total mass, then 24.9% remains. The second stage should provide a ${\Delta v}$ of 4,700 meters per second (15,000 $ft/s$); $1-e^{-4.7 / 4.5}=0.648$, therefore 64.8% of the remaining mass has to be propellant, which is 16.2% of the original total mass, and 8.7% remains for the tank and engines of the second stage, the payload, and in the case of a space shuttle, also the orbiter. Thus together 16.7% of the original launch mass is available for all engines, the tanks, and payload.
+- [Single-stage-to-orbit](https://en.m.wikipedia.org/wiki/Single-stage-to-orbit) rocket: $1-e^{-9.7 / 4.5}=0.884$, therefore 88.4% of the initial total mass has to be propellant. The remaining 11.6% is for the engines, the tank, and the payload.
+- [Two-stage-to-orbit](https://en.m.wikipedia.org/wiki/Two-stage-to-orbit): suppose that the first stage should provide a ${\Delta v}$ of 5,000 meters per second (16,000 $ft/s$); $1-e^{-5.0 / 4.5}=0.671$, therefore 67.1% of the initial total mass has to be propellant to the first stage. The remaining mass is 32.9%. After disposing of the first stage, a mass remains equal to this 32.9%, minus the mass of the tank and engines of the first stage. Assume that this is 8% of the initial total mass, then 24.9% remains. The second stage should provide a ${\Delta v}$ of 4,700 meters per second (15,000 $ft/s$); $1-e^{-4.7 / 4.5}=0.648$, therefore 64.8% of the remaining mass has to be propellant, which is 16.2% of the original total mass, and 8.7% remains for the tank and engines of the second stage, the payload, and in the case of a space shuttle, also the orbiter. Thus together 16.7% of the original launch mass is available for all engines, the tanks, and payload.
 
 ## Stages
 
@@ -102,7 +102,7 @@ $$
 
 and the payload is 10% × 10% × 10% = 0.1% of the initial mass.
 
-A comparable SSTO rocket, also with a 0.1% payload, could have a mass of 11.1% for fuel tanks and engines, and 88.8% for fuel. This would give
+A comparable [SSTO](https://en.m.wikipedia.org/wiki/Single-stage-to-orbit) rocket, also with a 0.1% payload, could have a mass of 11.1% for fuel tanks and engines, and 88.8% for fuel. This would give
 
 $$
 \Delta v=v_{\mathrm{e}} \ln (100 / 11.2)=2.19 v_{\mathrm{e}}
