@@ -114,7 +114,7 @@ If the motor of a new stage is ignited before the previous stage has been discar
 
 Consider the following system:
 
-<img src="/assets/images/mass.svg" width="444">
+<img src="/assets/images/mass.svg" width="222" align="right">
 
 In the following derivation, "the rocket" is taken to mean "the rocket and all of its unexpended propellant".
 
