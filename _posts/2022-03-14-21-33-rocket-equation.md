@@ -39,9 +39,9 @@ $$
 m_{0}=m_{f} e^{\frac{\Delta v}{v_{\mathrm{e}}}}
 $$
 
-<img src="/assets/images/rocket.svg" width="222" align="right">
+<img src="/assets/images/rocket.svg" width="123" align="right">
 
-So the necessary wet mass grows exponentially with the desired delta-v, as illustrated in a chart above.
+So the necessary wet mass grows exponentially with the desired delta-v, as illustrated in the chart.
 
 ## Terms of the equation
 
