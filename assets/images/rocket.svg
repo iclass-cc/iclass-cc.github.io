@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+	viewBox="-10 -80 90 90" width="500" height="500">
+<title>Tsiolkovsky Rocket Equation</title>
+<defs>
+	<pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
+		<path d="M0,0h10v10" fill="none" stroke="#999"/>
+	</pattern>
+</defs>
+<rect y="-80" width="80" height="80" fill="url(#grid)"/>
+<g fill="none">
+	<path d="M0,-80V0H80" stroke="#000"/>
+	<path d="M0,-2 Q 4,-2.4 8,-3 12,-3.6 16,-4.5 20,-5.3 24,-6.6 28,-7.9 32,-9.9 36,-12 40,-15 44,-18 48,-22 52,-26 56,-33 60,-39 64,-49 68,-59 72,-73 76,-88 80,-110" stroke="#00f"/>
+</g>
+<g font-size="4" fill="black" font-family="New Century Schoolbook" text-anchor="middle">
+	<text y="3"><tspan x="0">0</tspan><tspan x="20">1</tspan><tspan x="40">2</tspan><tspan x="60">3</tspan><tspan x="78">4</tspan></text>
+	<text x="40" y="8" font-style="italic"><tspan font-family="Times">Δ</tspan>v/v<tspan dy="1">e</tspan></text>
+	<text x="-3" y="-19">10</text><text x="-3" y="-39">20</text>
+	<text x="-3" y="-59">30</text><text x="-3" y="-77">40</text>
+	<text x="-7" y="-40" transform="rotate(-90,-7,-40)">Mass ratio</text>
+</g>
+</svg>
