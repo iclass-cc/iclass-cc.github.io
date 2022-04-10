@@ -6,6 +6,8 @@ date: 2022-04-11 06:27 +0800
 tags: Pilot 飞行
 ---
 
+![United](/assets/images/united.jpg)
+
 **Civil aviation** is one of two major categories of flying, representing all non-military and non-state aviation, both private and commercial. Most of the countries in the world are members of the International Civil Aviation Organization (ICAO) and work together to establish common standards and recommended practices for civil aviation through that agency.
 
 Civil aviation includes three major categories:
