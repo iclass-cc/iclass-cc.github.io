@@ -56,32 +56,10 @@
 
 
   
-  
-  <div class="site-header-image">
-    <img id="originBg" width="100%" alt="Hike News" src="">
-  </div>
-
-  <div id="header-blur" class="site-header-image blur" style="position: absolute; top:0; height: 207px; min-height: 207px; min-width: 100%;">
-    <img id="blurBg" width="100%" style="top: 96%" alt="Hike News" src="">
-  </div>
-
-  <script>
-        var imgUrls = "css/images/pose01.jpg,https://source.unsplash.com/collection/954550/1920x1080,https://source.unsplash.com/collection/954550/1920x1081".split(",");
-        var random = Math.floor((Math.random() * imgUrls.length ));
-        if (imgUrls[random].startsWith('http') || imgUrls[random].indexOf('://') >= 0) {
-          document.getElementById("originBg").src=imgUrls[random];
-          document.getElementById("blurBg").src=imgUrls[random];
-        } else {
-          document.getElementById("originBg").src='/' + imgUrls[random];
-          document.getElementById("blurBg").src='/' + imgUrls[random];
-        }
-    </script>
-
-
 
 
 <header id="allheader" class="site-header" role="banner" 
-   style="width: 100%; position: absolute; top:0; background: rgba(255,255,255,.8);"  >
+   >
   <div class="clearfix container">
       <div class="site-branding">
 
@@ -911,13 +889,10 @@ Directors: Chris Buck · Jennifer Lee
    			<li><a target="_blank" rel="noopener" href="https://twitter.com/bruce1ai" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li> 
 
    		
-   			<li><a href="" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li> 
+   			<li><a target="_blank" rel="noopener" href="https://facebook.com/im.88o.io" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li> 
 
    		
-   			<li><a href="" title="Google-plus"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li> 
-
-   		
-   			<li><a href="" title="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li> 
+   			<li><a target="_blank" rel="noopener" href="https://instagram.com/bruceyee" title="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li> 
 
    		
    		</ul>
@@ -1081,14 +1056,6 @@ Directors: Chris Buck · Jennifer Lee
       <div class="site-info">
 	      &copy; 2022 iClass Online All Rights Reserved.
         
-            <span id="busuanzi_container_site_uv">
-              本站访客数<span id="busuanzi_value_site_uv"></span>人次  
-              本站总访问量<span id="busuanzi_value_site_pv"></span>次
-            </span>
-          
-      </div>
-      <div class="site-credit">
-        Theme by <a href="https://github.com/iTimeTraveler/hexo-theme-hipaper" target="_blank">hipaper</a>
       </div>
   </div>
 </footer>
@@ -1105,9 +1072,6 @@ Directors: Chris Buck · Jennifer Lee
 
 
     <!-- headerblur min height -->
-    
-      var headerblur = document.getElementById("header-blur");
-      headerblur.style.minHeight = window.getComputedStyle(document.getElementById("allheader"), null).height;
     
     
 </script>
@@ -1172,14 +1136,6 @@ Directors: Chris Buck · Jennifer Lee
 
 
 
-  <div style="display: none;">
-    <script src="https://s95.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
-  </div>
-
-
-
-	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
-	</script>
 
 
 
