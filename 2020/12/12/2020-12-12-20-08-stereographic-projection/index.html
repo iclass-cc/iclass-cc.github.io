@@ -18,16 +18,16 @@
 <meta property="og:site_name" content="iClass Online">
 <meta property="og:description" content="In geometry, the stereographic projection is a particular mapping (function) that projects a sphere onto a plane. The projection is defined on the entire sphere, except at one point: the projection po">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://iclass.cc/assets/images/projection.gif">
-<meta property="og:image" content="https://iclass.cc/assets/images/fig0.gif">
-<meta property="og:image" content="https://iclass.cc/assets/images/fig1.png">
-<meta property="og:image" content="https://iclass.cc/assets/images/fig2.png">
+<meta property="og:image" content="https://iclass.cc/2020/12/12/2020-12-12-20-08-stereographic-projection/projection.gif">
+<meta property="og:image" content="https://iclass.cc/2020/12/12/2020-12-12-20-08-stereographic-projection/fig0.gif">
+<meta property="og:image" content="https://iclass.cc/2020/12/12/2020-12-12-20-08-stereographic-projection/fig1.png">
+<meta property="og:image" content="https://iclass.cc/2020/12/12/2020-12-12-20-08-stereographic-projection/fig2.png">
 <meta property="article:published_time" content="2020-12-12T12:08:00.000Z">
-<meta property="article:modified_time" content="2022-06-15T19:13:20.648Z">
+<meta property="article:modified_time" content="2022-06-17T13:38:01.162Z">
 <meta property="article:author" content="Bruce">
 <meta property="article:tag" content="Math 数学">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://iclass.cc/assets/images/projection.gif">
+<meta name="twitter:image" content="https://iclass.cc/2020/12/12/2020-12-12-20-08-stereographic-projection/projection.gif">
   
     <link rel="alternate" href="/atom.xml" title="iClass Online" type="application/atom+xml">
   
@@ -140,12 +140,14 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>In geometry, the <strong>stereographic projection</strong> is a particular mapping (function) that projects a sphere onto a plane. The projection is defined on the entire sphere, except at one point: the projection point. Where it is defined, the mapping is smooth and bijective. It is conformal, meaning that it preserves angles at which curves meet. It is neither isometric nor area-preserving: that is, it preserves neither distances nor the areas of figures.</p>
-<img src="/assets/images/projection.gif" width="444">
+<img src="/2020/12/12/2020-12-12-20-08-stereographic-projection/projection.gif" width="444">
 
 <p>Intuitively, then, the stereographic projection is a way of picturing the sphere as the plane, with some inevitable compromises. Because the sphere and the plane appear in many areas of mathematics and its applications, so does the stereographic projection; it finds use in diverse fields including complex analysis, cartography, geology, and photography. In practice, the projection is carried out by computer or by hand using a special kind of graph paper called a stereographic net, shortened to stereonet, or Wulff net.</p>
-<img src="/assets/images/fig0.gif" width="444">
+<img src="/2020/12/12/2020-12-12-20-08-stereographic-projection/fig0.gif" width="444">
 
 <p>A map projection obtained by projecting points P on the surface of sphere from the sphere’s north pole N to point $P^{‘}$ in a plane tangent to the south pole S. In such a projection, <a target="_blank" rel="noopener" href="https://mathworld.wolfram.com/GreatCircle.html">great circles</a> are mapped to circles, and <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Rhumb_line">loxodromes</a> become <a target="_blank" rel="noopener" href="https://mathworld.wolfram.com/LogarithmicSpiral.html">logarithmic spirals</a>.</p>
+<span id="more"></span>
+
 <p>Stereographic projections have a very simple algebraic form that results immediately from similarity of triangles. In the above figures, let the stereographic sphere have radius r, and the z-axis positioned as shown. Then a variety of different transformation formulas are possible depending on the relative positions of the projection plane and z-axis.</p>
 <p>The transformation equations for a sphere of radius R are given by</p>
 <p>$$<br>\begin{aligned}<br>&amp;x&#x3D;k \cos \phi \sin \left(\lambda-\lambda_{0}\right) \<br>&amp;y&#x3D;k\left[\cos \phi_{1} \sin \phi-\sin \phi_{1} \cos \phi \cos \left(\lambda-\lambda_{0}\right)\right]<br>\end{aligned}<br>$$</p>
@@ -166,7 +168,7 @@
 <p>132°&#x2F;60°SW</p>
 <h3 id="The-β-diagram"><a href="#The-β-diagram" class="headerlink" title="The β-diagram"></a>The β-diagram</h3><p>On a new overlay, plot the fold limb orientations as planes.</p>
 <p>Mark each intersection between planes with a point. If more than two planes intersect at a single location, draw a circle around the point for each additional plane.</p>
-<img src="/assets/images/fig1.png" width="333">
+<img src="/2020/12/12/2020-12-12-20-08-stereographic-projection/fig1.png" width="333">
 
 <p>Mark the centre of density of the point distribution. In Figure above (labs), the centre of density is marked with a star. Use the circles to help you to account for the extra “weight” of intersections of more than two planes. One way to think about the weight of points is to imagine each intersection as a small magnet. Where more than two planes intersect, there is an additional magnet for each additional plane. Now imagine that you have a small iron sphere suspended on a string. If you were to hold the sphere just above the centre of the cluster of magnets, each magnet would exert a force on the sphere; magnets located closer together would have a stronger pull on the sphere than a single magnet by itself. Therefore, the suspend sphere might be pulled more to one side than another. The centre of density of the point distribution is the point above which the sphere would come to rest.</p>
 <p>The centre of density on a β-diagram is referred to as a β-axis. It is an estimate of the orientation of the fold axis. In our example, the β-axis has an orientation of 40°&#x2F;172°.</p>
@@ -174,7 +176,7 @@
 <p>Rotate the overlay until you find the great circle that best fits the set of poles. If the fold measurements are correct, your plotting is correct, and the fold is perfectly cylindrical, then all of the poles should fall on a single great circle. In this example, however, this is not the case, so a great circle has been chosen using the following criteria:</p>
 <p>Many of the poles fall on the great circle, or very close to the great circle. For poles that do not fall on the great circle, an attempt is made to distribute them as evenly as possible on either side of the great circle. The great circle you choose to fit the poles is called the π-circle. Find the pole to the π-circle. This is called the π-axis. The π-axis for this example is oriented 40°&#x2F;175°. The π-axis, like the β-axis, is an estimate of the fold axis. Under ideal circumstances, the β-axis you calculate should be the same as the π-axis. This unusual, however, because it is much more difficult to judge the centre of density of a point cluster than it is to fit a curve to a set of points.</p>
 <p>The π-diagram can also be used to estimate the orientation of the axial plane. To do this, we use the angle between the fold limbs, called the interlimb angle. The interlimb angle can be estimated from the spread of the poles along the π-circle. In Figure below, the interlimb angle measured through the poles is 105°. (You can measure this by rotating your stereonet until the π-circle lies on a great circle, and then counting off the distance.) Note, however, that there are actually two possible interlimb angles: The other is 75°. To decide which interlimb angle to use requires that you have some additional knowledge about the shape of the fold. If the fold is tightly closed and has an interlimb angle of less than 90°, then you would use 75°. If the fold is less tightly closed, and has an interlimb angle greater than 90°, then you would use 105°.</p>
-<img src="/assets/images/fig2.png" width="333">
+<img src="/2020/12/12/2020-12-12-20-08-stereographic-projection/fig2.png" width="333">
 
 <p>Regardless of which interlimb angle you use, the procedure is the same. First, mark the midpoint (x) of the interlimb angle. Next, rotate your overlay until the midpoint and the π-axis lie on the same great circle, and trace the great circle to find the <strong>limb bisectrix</strong>, the plane that lies exactly between the limbs of the fold (as represented by your data). The limb bisectrix is an approximation of the axial plane.</p>
 <p>If we had independent information that the fold was not tightly closed, then we would choose the great circle connecting the midpoint of the 105° angle ($M_{1}$) and the π-axis. The orientation of the axial plane ($A_{1}$) would be 164°&#x2F;76°W. This fold could be described as moderately plunging and steeply inclined.</p>
@@ -187,7 +189,6 @@
 <li><p>另一种是面的大圆图解，即β图解，把所测量的每个面作为大圆来投影；<br>如果将圆柱状褶皱的褶皱面投影，所有大圆轨迹相交于一点，称为β轴，代表褶皱轴的产状。</p>
 </li>
 </ul>
-<span id="more"></span>
 
       
     </div>
