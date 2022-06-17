@@ -18,15 +18,15 @@
 <meta property="og:site_name" content="iClass Online">
 <meta property="og:description" content="DivergenceDivergence is an operation on a vector field that tells us how the field behaves toward or away from a point. Locally, the divergence of a vector field $\vec{F}$ in $\mathbb{R}^2$ or $\mathb">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://iclass.cc/assets/images/d1.jpg">
-<meta property="og:image" content="https://iclass.cc/assets/images/d2.jpg">
-<meta property="og:image" content="https://iclass.cc/assets/images/c1.jpg">
+<meta property="og:image" content="https://iclass.cc/2021/01/07/2021-01-07-05-25-divergence-curl/d1.jpg">
+<meta property="og:image" content="https://iclass.cc/2021/01/07/2021-01-07-05-25-divergence-curl/d2.jpg">
+<meta property="og:image" content="https://iclass.cc/2021/01/07/2021-01-07-05-25-divergence-curl/c1.jpg">
 <meta property="article:published_time" content="2021-01-06T21:25:00.000Z">
-<meta property="article:modified_time" content="2022-06-15T19:13:20.656Z">
+<meta property="article:modified_time" content="2022-06-17T12:21:17.320Z">
 <meta property="article:author" content="Bruce">
 <meta property="article:tag" content="Physics 物理">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://iclass.cc/assets/images/d1.jpg">
+<meta name="twitter:image" content="https://iclass.cc/2021/01/07/2021-01-07-05-25-divergence-curl/d1.jpg">
   
     <link rel="alternate" href="/atom.xml" title="iClass Online" type="application/atom+xml">
   
@@ -146,25 +146,27 @@
 <p>divergence can be written symbolically as the dot product</p>
 <p>$$\operatorname{div} \vec{F}&#x3D;\vec{\nabla} \cdot \vec{F}.$$</p>
 <p>Note this is merely helpful notation, because the dot product of a vector of operators and a vector of functions is not meaningfully defined given our current definition of dot product.</p>
+<span id="more"></span>
+
 <p>If $\vec{F} &#x3D; \langle P,Q \rangle$ is a vector field in $\mathbb{R}^2$ , and $P_{x}$ and $Q_{y}$ both exist, then the divergence of $\vec{F}$ is defined similarly as</p>
 <p>$$\begin{aligned}<br>\operatorname{div} \vec{F} &amp;&#x3D;P_{x}+Q_{y} \<br>&amp;&#x3D;\frac{\partial P}{\partial x}+\frac{\partial Q}{\partial y} \<br>&amp;&#x3D;\vec{\nabla} \cdot \vec{F}<br>\end{aligned}.$$</p>
 <p>To illustrate this point, consider the two vector fields in Figure 1. At any particular point, the amount flowing in is the same as the amount flowing out, so at every point the “outflowing-ness” of the field is zero. Therefore, we expect the divergence of both fields to be zero, and this is indeed the case, as</p>
 <p>$$\text{div}(\langle 1,2 \rangle ) &#x3D; \dfrac{\partial}{\partial x} (1) + \dfrac{\partial}{\partial y}(2) &#x3D; 0$$</p>
 <p>and</p>
 <p>$$\text{div}(\langle -y,x \rangle ) &#x3D; \dfrac{\partial}{\partial x} (-y) + \dfrac{\partial}{\partial y} (x) &#x3D; 0.$$</p>
-<p><img src="/assets/images/d1.jpg" alt="Figure 1"></p>
+<p><img src="/2021/01/07/2021-01-07-05-25-divergence-curl/d1.jpg"></p>
 <blockquote>
 <p>Figure 1: (a) Vector field ⟨1, 2⟩ has zero divergence. (b) Vector field ⟨−𝑦, 𝑥⟩ also has zero divergence.</p>
 </blockquote>
 <p>By contrast, consider radial vector field $\vec{R}(x, y)&#x3D;\langle-x,-y\rangle$ in Figure 2. At any given point, more fluid is flowing in than is flowing out, and therefore the “outgoingness” of the field is negative. We expect the divergence of this field to be negative, and this is indeed the case, as</p>
 <p>$$\operatorname{div}(\vec{R})&#x3D;\frac{\partial}{\partial x}(-x)+\frac{\partial}{\partial y}(-y)&#x3D;-2$$</p>
-<p><img src="/assets/images/d2.jpg" alt="Figure 2"></p>
+<p><img src="/2021/01/07/2021-01-07-05-25-divergence-curl/d2.jpg"></p>
 <blockquote>
 <p>Figure 2: This vector field has negative divergence.</p>
 </blockquote>
 <p>To get a global sense of what divergence is telling us, suppose that a vector field in $\mathbb{R}^2$ represents the velocity of a fluid. Imagine taking an elastic circle (a circle with a shape that can be changed by the vector field) and dropping it into a fluid. If the circle maintains its exact area as it flows through the fluid, then the divergence is zero. This would occur for both vector fields in Figure 1. On the other hand, if the circle’s shape is distorted so that its area shrinks or expands, then the divergence is not zero. Imagine dropping such an elastic circle into the radial vector field in Figure 2 so that the center of the circle lands at point (3, 3). The circle would flow toward the origin, and as it did so the front of the circle would travel more slowly than the back, causing the circle to “scrunch” and lose area. This is how you can see a negative divergence.</p>
 <h2 id="Curl"><a href="#Curl" class="headerlink" title="Curl"></a>Curl</h2><p>The second operation on a vector field that we examine is the curl, which measures the extent of rotation of the field about a point. Suppose that $\vec{F}$ represents the velocity field of a fluid. Then, the curl of $\vec{F}$ at point $P$ is a vector that measures the tendency of particles near $P$ to rotate about the axis that points in the direction of this vector. The magnitude of the curl vector at $P$ measures how quickly the particles rotate around this axis. In other words, the curl at a point is a measure of the vector field’s “spin” at that point. Visually, imagine placing a paddlewheel into a fluid at $P$ , with the axis of the paddlewheel aligned with the curl vector (Figure 3). The curl measures the tendency of the paddlewheel to rotate.</p>
-<p><img src="/assets/images/c1.jpg" alt="Figure Curl"></p>
+<p><img src="/2021/01/07/2021-01-07-05-25-divergence-curl/c1.jpg"></p>
 <blockquote>
 <p>Figure 3: To visualize curl at a point, imagine placing a small paddlewheel into the vector field at a point.</p>
 </blockquote>
@@ -180,7 +182,6 @@
 <p>Thus, this matrix is a way to help remember the formula for curl. Keep in mind, though, that the word determinant is used very loosely. A determinant is not really defined on a matrix with entries that are three vectors, three operators, and three functions.</p>
 <p>If $\vec{F} &#x3D; \langle P,Q \rangle$ is a vector field in $\mathbb{R}^2$ , then the curl of $\vec{F}$ , by definition, is</p>
 <p>$$\operatorname{curl} \vec{F}&#x3D;\left(Q_{x}-P_{y}\right) \hat{\mathbf{k}}&#x3D;\left(\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y}\right) \hat{\mathbf{k}}$$</p>
-<span id="more"></span>
 
       
     </div>
