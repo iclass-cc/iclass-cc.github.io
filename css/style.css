@@ -573,13 +573,13 @@ a.article-title:hover {
 .article-entry blockquote:before {
   float: left;
   font-family: "FontAwesome";
-  content: "\f10d";
+  content: " ";
   margin-left: -0.8em;
 }
 .article-entry blockquote:after {
   float: right;
   font-family: "FontAwesome";
-  content: "\f10e";
+  content: " ";
   margin-right: -0.8em;
   margin-top: -1.5em;
 }
@@ -612,13 +612,13 @@ a.article-title:hover {
 .article-entry .pullquote:before {
   float: left;
   font-family: "FontAwesome";
-  content: "\f10d";
+  content: " ";
   margin-left: -0.5em;
 }
 .article-entry .pullquote:after {
   float: right;
   font-family: "FontAwesome";
-  content: "\f10e";
+  content: " ";
   margin-right: -0.5em;
   margin-top: -1em;
 }
