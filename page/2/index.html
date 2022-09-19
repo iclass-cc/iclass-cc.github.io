@@ -59,10 +59,32 @@
 
 
   
+  
+  <div class="site-header-image">
+    <img id="originBg" width="100%" alt="Hike News" src="">
+  </div>
+
+  <div id="header-blur" class="site-header-image blur" style="position: absolute; top:0; height: 207px; min-height: 207px; min-width: 100%;">
+    <img id="blurBg" width="100%" style="top: 96%" alt="Hike News" src="">
+  </div>
+
+  <script>
+        var imgUrls = "css/images/pose01.jpg,https://source.unsplash.com/collection/954550/1920x1080,https://source.unsplash.com/collection/954550/1920x1081".split(",");
+        var random = Math.floor((Math.random() * imgUrls.length ));
+        if (imgUrls[random].startsWith('http') || imgUrls[random].indexOf('://') >= 0) {
+          document.getElementById("originBg").src=imgUrls[random];
+          document.getElementById("blurBg").src=imgUrls[random];
+        } else {
+          document.getElementById("originBg").src='/' + imgUrls[random];
+          document.getElementById("blurBg").src='/' + imgUrls[random];
+        }
+    </script>
+
+
 
 
 <header id="allheader" class="site-header" role="banner" 
-   >
+   style="width: 100%; position: absolute; top:0; background: rgba(255,255,255,.8);"  >
   <div class="clearfix container">
       <div class="site-branding">
 
@@ -108,6 +130,70 @@
       <div id="content" class="outer">
         
           <section id="main">
+  
+    <article id="post-2021-05-01-15-47-turbofan"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2021/05/01/2021-05-01-15-47-turbofan/">Turbofan 涡轮风扇</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2021/05/01/2021-05-01-15-47-turbofan/" class="article-date">
+	  <time datetime="2021-05-01T07:47:00.000Z" itemprop="datePublished">May 1, 2021</time>
+	</a>
+
+       
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+
+          
+          <div class="entry-summary">
+          Jet engines, which are also called gas turbines, work by sucking air into the front of the engine using a fan. From there, the engine compresses the air, mixes fuel with it, ignites the fuel&#x2F;air mixture, and shoots it out the back of the engine, creating thrust.
+A turbofan engine, sometimes referred to as a fanjet or bypass engine, is a jet engine variant which produces thrust using a combination of jet core efflux and bypass air which has been accelerated by a ducted fan that is driven by the jet core.
+
+The FanThe first part of the turbofan is the fan. It’s also the part that you can see when you’re looking at the front of a jet.
+The fan, which almost always is made of titanium blades, sucks in tremendous quantities of air into the engine.
+The air moves through two parts of the engine. Some of the air is directed into the engine’s core, where the combustion will occur. The rest of the air, called “bypass air”, is moved around the outside of the engine core through a duct. This bypass air creates additional thrust, cools the engine, and makes the engine quieter by blanketing the exhaust air that’s exiting the engine. In today’s modern turbofans, bypass air produces the majority of an engine’s thrust.
+The CompressorThe compressor is located in the first part of the engine core. And it, as you probably have guessed, compresses the air.
+The compressor, which is called an “axial flow compressor”, uses a series of airfoil-shaped spinning blades to speed up and compress the air. It’s called axial flow, because the air passes through the engine in a direction parallel to the shaft of the engine (as opposed to centrifugal flow).
+As the air moves through the compressor, each set of blades is slightly smaller, adding more energy and compression to the air.
+In between each set of compressor blades are non-moving airfoil-shaped blades called “stators”. These stators (which are also called vanes), increase the pressure of the air by converting the rotational energy into static pressure. The stators also prepare the air for entering the next set of rotating blades. In other words, they “straighten” the flow of air.
+When combined, a pair of rotating and stationary blades is called a stage.
+
+        
+          <p class="article-more-link">
+            <a href="/2021/05/01/2021-05-01-15-47-turbofan/#more">Continue Reading →</a>
+          </p>
+        </div>
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+      
+  <span class="ico-tags"></span>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Pilot-%E9%A3%9E%E8%A1%8C/" rel="tag">Pilot 飞行</a></li></ul>
+
+      
+    </footer>
+    <hr class="entry-footer-hr">
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
   
     <article id="post-2021-04-04-11-33-time-dilation"  class="article article-type-post" itemscope itemprop="blogPost" >
   <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
@@ -699,67 +785,6 @@ Riemann extended the study of the zeta function to include the complex numbers $
 <!-- Table of Contents -->
 
   
-    <article id="post-2021-01-07-05-25-divergence-curl"  class="article article-type-post" itemscope itemprop="blogPost" >
-  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="article-title" href="/2021/01/07/2021-01-07-05-25-divergence-curl/">Divergence &amp; Curl 散度和旋度</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-meta">
-      
-	<a href="/2021/01/07/2021-01-07-05-25-divergence-curl/" class="article-date">
-	  <time datetime="2021-01-06T21:25:00.000Z" itemprop="datePublished">January 7, 2021</time>
-	</a>
-
-       
-      
-    </div>
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-
-          
-          <div class="entry-summary">
-          DivergenceDivergence is an operation on a vector field that tells us how the field behaves toward or away from a point. Locally, the divergence of a vector field $\vec{F}$ in $\mathbb{R}^2$ or $\mathbb{R}^3$ at a particular point $P$ is a measure of the “outflowing-ness” of the vector field at $P$.If $\vec{F}$ represents the velocity of a fluid, then the divergence of $\vec{F}$ at $P$ measures the net rate of change with respect to time of the amount of fluid flowing away from $P$ (the tendency of the fluid to flow “out of” P). In particular, if the amount of fluid flowing into $P$ is the same as the amount flowing out, then the divergence at $P$ is zero.
-Definition: divergence in $\mathbb{R}^3$If $\vec{F} &#x3D; \langle P,Q,R \rangle$ is a vector field in $\mathbb{R}^3$ and $P_x, , Q_y,$ and $R_z$ all exist, then the divergence of $\vec{F}$ is defined by
-$$\begin{aligned}\operatorname{div} F &amp;&#x3D;P_{x}+Q_{y}+R_{z} \&amp;&#x3D;\frac{\partial P}{\partial x}+\frac{\partial Q}{\partial y}+\frac{\partial R}{\partial z}\end{aligned}$$
-Note the divergence of a vector field is not a vector field, but a scalar function. In terms of the gradient operator
-$$\vec{\nabla}&#x3D;\left\langle\frac{\partial}{\partial x}, \frac{\partial}{\partial y}, \frac{\partial}{\partial z}\right\rangle$$
-divergence can be written symbolically as the dot product
-$$\operatorname{div} \vec{F}&#x3D;\vec{\nabla} \cdot \vec{F}.$$
-Note this is merely helpful notation, because the dot product of a vector of operators and a vector of functions is not meaningfully defined given our current definition of dot product.
-
-        
-          <p class="article-more-link">
-            <a href="/2021/01/07/2021-01-07-05-25-divergence-curl/#more">Continue Reading →</a>
-          </p>
-        </div>
-      
-    </div>
-    <footer class="entry-meta entry-footer">
-      
-      
-  <span class="ico-tags"></span>
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Physics-%E7%89%A9%E7%90%86/" rel="tag">Physics 物理</a></li></ul>
-
-      
-    </footer>
-    <hr class="entry-footer-hr">
-  </div>
-  
-</article>
-
-<!-- Table of Contents -->
-
-  
 
 
   <nav id="page-nav">
@@ -872,6 +897,18 @@ Note this is merely helpful notation, because the dot product of a vector of ope
               <div class="widget-entry-summary" style="margin: 0;">
             
 
+              <h6 style="margin: 0;"><a href="/2022/09/20/2022-09-20-03-33-hurricanes/">Hurricanes 飓风</a></h6>
+              <span>September 20, 2022</span>
+            </div>
+
+          </li>
+        
+          <li class="clearfix">
+
+            
+              <div class="widget-entry-summary" style="margin: 0;">
+            
+
               <h6 style="margin: 0;"><a href="/2022/04/25/2022-04-25-14-45-melatonin/">Melatonin 褪黑素</a></h6>
               <span>April 25, 2022</span>
             </div>
@@ -926,18 +963,6 @@ Note this is merely helpful notation, because the dot product of a vector of ope
 
           </li>
         
-          <li class="clearfix">
-
-            
-              <div class="widget-entry-summary" style="margin: 0;">
-            
-
-              <h6 style="margin: 0;"><a href="/2021/11/17/2021-11-17-22-14-dsn/">DSN 深空网络</a></h6>
-              <span>November 17, 2021</span>
-            </div>
-
-          </li>
-        
       </ul>
     </div>
   </div>
@@ -957,7 +982,7 @@ Note this is merely helpful notation, because the dot product of a vector of ope
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Art-%E8%89%BA%E6%9C%AF/" rel="tag">Art 艺术</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Biology-%E7%94%9F%E7%89%A9%E5%AD%A6/" rel="tag">Biology 生物学</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Chemical-%E5%8C%96%E5%AD%A6/" rel="tag">Chemical 化学</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Chinese-%E5%9B%BD%E5%AD%A6/" rel="tag">Chinese 国学</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Computer/" rel="tag">Computer</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Economics-%E7%BB%8F%E6%B5%8E/" rel="tag">Economics 经济</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hardware/" rel="tag">Hardware</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Math-%E6%95%B0%E5%AD%A6/" rel="tag">Math 数学</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Physics-%E7%89%A9%E7%90%86/" rel="tag">Physics 物理</a><span class="tag-list-count">15</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Pilot-%E9%A3%9E%E8%A1%8C/" rel="tag">Pilot 飞行</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Software/" rel="tag">Software</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Sports-%E4%BD%93%E8%82%B2/" rel="tag">Sports 体育</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%8B%B1%E8%AF%AD-English/" rel="tag">英语 English</a><span class="tag-list-count">16</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%9F%A9%E8%AF%AD-%ED%95%9C%EA%B8%80/" rel="tag">韩语 한글</a><span class="tag-list-count">3</span></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Art-%E8%89%BA%E6%9C%AF/" rel="tag">Art 艺术</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Biology-%E7%94%9F%E7%89%A9%E5%AD%A6/" rel="tag">Biology 生物学</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Chemical-%E5%8C%96%E5%AD%A6/" rel="tag">Chemical 化学</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Chinese-%E5%9B%BD%E5%AD%A6/" rel="tag">Chinese 国学</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Computer/" rel="tag">Computer</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Economics-%E7%BB%8F%E6%B5%8E/" rel="tag">Economics 经济</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hardware/" rel="tag">Hardware</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Math-%E6%95%B0%E5%AD%A6/" rel="tag">Math 数学</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Physics-%E7%89%A9%E7%90%86/" rel="tag">Physics 物理</a><span class="tag-list-count">15</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Pilot-%E9%A3%9E%E8%A1%8C/" rel="tag">Pilot 飞行</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Software/" rel="tag">Software</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Sports-%E4%BD%93%E8%82%B2/" rel="tag">Sports 体育</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Weather-%E6%B0%94%E8%B1%A1/" rel="tag">Weather 气象</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%8B%B1%E8%AF%AD-English/" rel="tag">英语 English</a><span class="tag-list-count">16</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%9F%A9%E8%AF%AD-%ED%95%9C%EA%B8%80/" rel="tag">韩语 한글</a><span class="tag-list-count">3</span></li></ul>
     </div>
   </div>
 
@@ -967,7 +992,7 @@ Note this is merely helpful notation, because the dot product of a vector of ope
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/Art-%E8%89%BA%E6%9C%AF/" style="font-size: 12.86px;">Art 艺术</a> <a href="/tags/Biology-%E7%94%9F%E7%89%A9%E5%AD%A6/" style="font-size: 12.86px;">Biology 生物学</a> <a href="/tags/Chemical-%E5%8C%96%E5%AD%A6/" style="font-size: 10px;">Chemical 化学</a> <a href="/tags/Chinese-%E5%9B%BD%E5%AD%A6/" style="font-size: 11.43px;">Chinese 国学</a> <a href="/tags/Computer/" style="font-size: 11.43px;">Computer</a> <a href="/tags/Economics-%E7%BB%8F%E6%B5%8E/" style="font-size: 14.29px;">Economics 经济</a> <a href="/tags/Hardware/" style="font-size: 10px;">Hardware</a> <a href="/tags/Math-%E6%95%B0%E5%AD%A6/" style="font-size: 17.14px;">Math 数学</a> <a href="/tags/Physics-%E7%89%A9%E7%90%86/" style="font-size: 18.57px;">Physics 物理</a> <a href="/tags/Pilot-%E9%A3%9E%E8%A1%8C/" style="font-size: 14.29px;">Pilot 飞行</a> <a href="/tags/Software/" style="font-size: 10px;">Software</a> <a href="/tags/Sports-%E4%BD%93%E8%82%B2/" style="font-size: 15.71px;">Sports 体育</a> <a href="/tags/%E8%8B%B1%E8%AF%AD-English/" style="font-size: 20px;">英语 English</a> <a href="/tags/%E9%9F%A9%E8%AF%AD-%ED%95%9C%EA%B8%80/" style="font-size: 12.86px;">韩语 한글</a>
+      <a href="/tags/Art-%E8%89%BA%E6%9C%AF/" style="font-size: 12.86px;">Art 艺术</a> <a href="/tags/Biology-%E7%94%9F%E7%89%A9%E5%AD%A6/" style="font-size: 12.86px;">Biology 生物学</a> <a href="/tags/Chemical-%E5%8C%96%E5%AD%A6/" style="font-size: 10px;">Chemical 化学</a> <a href="/tags/Chinese-%E5%9B%BD%E5%AD%A6/" style="font-size: 11.43px;">Chinese 国学</a> <a href="/tags/Computer/" style="font-size: 11.43px;">Computer</a> <a href="/tags/Economics-%E7%BB%8F%E6%B5%8E/" style="font-size: 14.29px;">Economics 经济</a> <a href="/tags/Hardware/" style="font-size: 10px;">Hardware</a> <a href="/tags/Math-%E6%95%B0%E5%AD%A6/" style="font-size: 17.14px;">Math 数学</a> <a href="/tags/Physics-%E7%89%A9%E7%90%86/" style="font-size: 18.57px;">Physics 物理</a> <a href="/tags/Pilot-%E9%A3%9E%E8%A1%8C/" style="font-size: 14.29px;">Pilot 飞行</a> <a href="/tags/Software/" style="font-size: 10px;">Software</a> <a href="/tags/Sports-%E4%BD%93%E8%82%B2/" style="font-size: 15.71px;">Sports 体育</a> <a href="/tags/Weather-%E6%B0%94%E8%B1%A1/" style="font-size: 10px;">Weather 气象</a> <a href="/tags/%E8%8B%B1%E8%AF%AD-English/" style="font-size: 20px;">英语 English</a> <a href="/tags/%E9%9F%A9%E8%AF%AD-%ED%95%9C%EA%B8%80/" style="font-size: 12.86px;">韩语 한글</a>
     </div>
   </div>
 
@@ -977,7 +1002,7 @@ Note this is merely helpful notation, because the dot product of a vector of ope
     <h3 class="widget-title">Archives</h3>
 
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/04/">April 2022</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/03/">March 2022</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/11/">November 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/09/">September 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/08/">August 2021</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/05/">May 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/04/">April 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/03/">March 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/02/">February 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/01/">January 2021</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/12/">December 2020</a><span class="archive-list-count">31</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/11/">November 2020</a><span class="archive-list-count">17</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/09/">September 2022</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/04/">April 2022</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/03/">March 2022</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/11/">November 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/09/">September 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/08/">August 2021</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/05/">May 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/04/">April 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/03/">March 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/02/">February 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/01/">January 2021</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/12/">December 2020</a><span class="archive-list-count">31</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/11/">November 2020</a><span class="archive-list-count">17</span></li></ul>
     </div>
   </div>
 
@@ -1024,6 +1049,9 @@ Note this is merely helpful notation, because the dot product of a vector of ope
 
 
     <!-- headerblur min height -->
+    
+      var headerblur = document.getElementById("header-blur");
+      headerblur.style.minHeight = window.getComputedStyle(document.getElementById("allheader"), null).height;
     
     
 </script>

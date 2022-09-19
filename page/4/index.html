@@ -59,10 +59,32 @@
 
 
   
+  
+  <div class="site-header-image">
+    <img id="originBg" width="100%" alt="Hike News" src="">
+  </div>
+
+  <div id="header-blur" class="site-header-image blur" style="position: absolute; top:0; height: 207px; min-height: 207px; min-width: 100%;">
+    <img id="blurBg" width="100%" style="top: 96%" alt="Hike News" src="">
+  </div>
+
+  <script>
+        var imgUrls = "css/images/pose01.jpg,https://source.unsplash.com/collection/954550/1920x1080,https://source.unsplash.com/collection/954550/1920x1081".split(",");
+        var random = Math.floor((Math.random() * imgUrls.length ));
+        if (imgUrls[random].startsWith('http') || imgUrls[random].indexOf('://') >= 0) {
+          document.getElementById("originBg").src=imgUrls[random];
+          document.getElementById("blurBg").src=imgUrls[random];
+        } else {
+          document.getElementById("originBg").src='/' + imgUrls[random];
+          document.getElementById("blurBg").src='/' + imgUrls[random];
+        }
+    </script>
+
+
 
 
 <header id="allheader" class="site-header" role="banner" 
-   >
+   style="width: 100%; position: absolute; top:0; background: rgba(255,255,255,.8);"  >
   <div class="clearfix container">
       <div class="site-branding">
 
@@ -108,6 +130,66 @@
       <div id="content" class="outer">
         
           <section id="main">
+  
+    <article id="post-2020-12-15-11-07-baduk-3-0"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2020/12/15/2020-12-15-11-07-baduk-3-0/">Baduk 围棋入门 3.0</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2020/12/15/2020-12-15-11-07-baduk-3-0/" class="article-date">
+	  <time datetime="2020-12-15T03:07:00.000Z" itemprop="datePublished">December 15, 2020</time>
+	</a>
+
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/categories/Baduk/">Baduk</a>
+ 
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <div class="owl-media owl-video owl-youtube"><iframe src="//www.youtube.com/embed/cn65NOMuOnU" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+
+<blockquote>
+<p><strong>胡翼飞</strong> 的围棋入门视频。<br>主要内容：形势判断、再谈“死”与“活”、入侵与反击、实战中的中盘。</p>
+</blockquote>
+<p><strong>中盘</strong>是围棋术语。进入中盘阶段后，棋局变化莫测。<br>所以，中盘战斗力量是棋手提高棋力的关键，是下棋者的乐趣所在，也是围棋艺术美的根本。</p>
+<p>相对而言，布局和收官可以从书籍、定式和高手的对局通过模仿学习，<br>而中盘战斗则是围棋中最难以掌握的技术之一。</p>
+<h3 id="围棋对局的中间阶段"><a href="#围棋对局的中间阶段" class="headerlink" title="围棋对局的中间阶段"></a>围棋对局的中间阶段</h3><p>围棋对局一般分为三个阶段：布局、中盘、收官。</p>
+<p>收官阶段也称为官子阶段。<br>然而，这三个阶段之间并没有明显的界限，<br>何时进入中盘，何时进入收官，完全取决于棋局的发展和对局者的决断。<br>围棋中盘战术的主要技术，除了包括计算能力、掌控全局能力和形势判断之外，<br>还包括进攻、防守、手筋、死活、打入、侵消等多方面的战术。</p>
+<h3 id="对局中途决出胜负"><a href="#对局中途决出胜负" class="headerlink" title="对局中途决出胜负"></a>对局中途决出胜负</h3><p>在围棋对局的中途，一方主动认输，称为“中盘负”，而对手则为“中盘胜”。</p>
+
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/categories/Baduk/">Baduk</a>
+
+      
+  <span class="ico-tags"></span>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Sports-%E4%BD%93%E8%82%B2/" rel="tag">Sports 体育</a></li></ul>
+
+      
+    </footer>
+    <hr class="entry-footer-hr">
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
   
     <article id="post-2020-12-15-06-17-baduk-1-0"  class="article article-type-post" itemscope itemprop="blogPost" >
   <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
@@ -736,66 +818,6 @@ The starter motor is responsible for turning the engine over during ignition and
 <!-- Table of Contents -->
 
   
-    <article id="post-2020-12-12-20-08-stereographic-projection"  class="article article-type-post" itemscope itemprop="blogPost" >
-  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="article-title" href="/2020/12/12/2020-12-12-20-08-stereographic-projection/">Stereographic Projection 球面投影</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-meta">
-      
-	<a href="/2020/12/12/2020-12-12-20-08-stereographic-projection/" class="article-date">
-	  <time datetime="2020-12-12T12:08:00.000Z" itemprop="datePublished">December 12, 2020</time>
-	</a>
-
-       
-      
-    </div>
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-
-          
-          <div class="entry-summary">
-          In geometry, the stereographic projection is a particular mapping (function) that projects a sphere onto a plane. The projection is defined on the entire sphere, except at one point: the projection point. Where it is defined, the mapping is smooth and bijective. It is conformal, meaning that it preserves angles at which curves meet. It is neither isometric nor area-preserving: that is, it preserves neither distances nor the areas of figures.
-
-
-Intuitively, then, the stereographic projection is a way of picturing the sphere as the plane, with some inevitable compromises. Because the sphere and the plane appear in many areas of mathematics and its applications, so does the stereographic projection; it finds use in diverse fields including complex analysis, cartography, geology, and photography. In practice, the projection is carried out by computer or by hand using a special kind of graph paper called a stereographic net, shortened to stereonet, or Wulff net.
-
-
-A map projection obtained by projecting points P on the surface of sphere from the sphere’s north pole N to point $P^{‘}$ in a plane tangent to the south pole S. In such a projection, great circles are mapped to circles, and loxodromes become logarithmic spirals.
-
-        
-          <p class="article-more-link">
-            <a href="/2020/12/12/2020-12-12-20-08-stereographic-projection/#more">Continue Reading →</a>
-          </p>
-        </div>
-      
-    </div>
-    <footer class="entry-meta entry-footer">
-      
-      
-  <span class="ico-tags"></span>
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Math-%E6%95%B0%E5%AD%A6/" rel="tag">Math 数学</a></li></ul>
-
-      
-    </footer>
-    <hr class="entry-footer-hr">
-  </div>
-  
-</article>
-
-<!-- Table of Contents -->
-
-  
 
 
   <nav id="page-nav">
@@ -908,6 +930,18 @@ A map projection obtained by projecting points P on the surface of sphere from t
               <div class="widget-entry-summary" style="margin: 0;">
             
 
+              <h6 style="margin: 0;"><a href="/2022/09/20/2022-09-20-03-33-hurricanes/">Hurricanes 飓风</a></h6>
+              <span>September 20, 2022</span>
+            </div>
+
+          </li>
+        
+          <li class="clearfix">
+
+            
+              <div class="widget-entry-summary" style="margin: 0;">
+            
+
               <h6 style="margin: 0;"><a href="/2022/04/25/2022-04-25-14-45-melatonin/">Melatonin 褪黑素</a></h6>
               <span>April 25, 2022</span>
             </div>
@@ -962,18 +996,6 @@ A map projection obtained by projecting points P on the surface of sphere from t
 
           </li>
         
-          <li class="clearfix">
-
-            
-              <div class="widget-entry-summary" style="margin: 0;">
-            
-
-              <h6 style="margin: 0;"><a href="/2021/11/17/2021-11-17-22-14-dsn/">DSN 深空网络</a></h6>
-              <span>November 17, 2021</span>
-            </div>
-
-          </li>
-        
       </ul>
     </div>
   </div>
@@ -993,7 +1015,7 @@ A map projection obtained by projecting points P on the surface of sphere from t
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Art-%E8%89%BA%E6%9C%AF/" rel="tag">Art 艺术</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Biology-%E7%94%9F%E7%89%A9%E5%AD%A6/" rel="tag">Biology 生物学</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Chemical-%E5%8C%96%E5%AD%A6/" rel="tag">Chemical 化学</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Chinese-%E5%9B%BD%E5%AD%A6/" rel="tag">Chinese 国学</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Computer/" rel="tag">Computer</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Economics-%E7%BB%8F%E6%B5%8E/" rel="tag">Economics 经济</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hardware/" rel="tag">Hardware</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Math-%E6%95%B0%E5%AD%A6/" rel="tag">Math 数学</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Physics-%E7%89%A9%E7%90%86/" rel="tag">Physics 物理</a><span class="tag-list-count">15</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Pilot-%E9%A3%9E%E8%A1%8C/" rel="tag">Pilot 飞行</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Software/" rel="tag">Software</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Sports-%E4%BD%93%E8%82%B2/" rel="tag">Sports 体育</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%8B%B1%E8%AF%AD-English/" rel="tag">英语 English</a><span class="tag-list-count">16</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%9F%A9%E8%AF%AD-%ED%95%9C%EA%B8%80/" rel="tag">韩语 한글</a><span class="tag-list-count">3</span></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Art-%E8%89%BA%E6%9C%AF/" rel="tag">Art 艺术</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Biology-%E7%94%9F%E7%89%A9%E5%AD%A6/" rel="tag">Biology 生物学</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Chemical-%E5%8C%96%E5%AD%A6/" rel="tag">Chemical 化学</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Chinese-%E5%9B%BD%E5%AD%A6/" rel="tag">Chinese 国学</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Computer/" rel="tag">Computer</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Economics-%E7%BB%8F%E6%B5%8E/" rel="tag">Economics 经济</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hardware/" rel="tag">Hardware</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Math-%E6%95%B0%E5%AD%A6/" rel="tag">Math 数学</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Physics-%E7%89%A9%E7%90%86/" rel="tag">Physics 物理</a><span class="tag-list-count">15</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Pilot-%E9%A3%9E%E8%A1%8C/" rel="tag">Pilot 飞行</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Software/" rel="tag">Software</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Sports-%E4%BD%93%E8%82%B2/" rel="tag">Sports 体育</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Weather-%E6%B0%94%E8%B1%A1/" rel="tag">Weather 气象</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%8B%B1%E8%AF%AD-English/" rel="tag">英语 English</a><span class="tag-list-count">16</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%9F%A9%E8%AF%AD-%ED%95%9C%EA%B8%80/" rel="tag">韩语 한글</a><span class="tag-list-count">3</span></li></ul>
     </div>
   </div>
 
@@ -1003,7 +1025,7 @@ A map projection obtained by projecting points P on the surface of sphere from t
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/Art-%E8%89%BA%E6%9C%AF/" style="font-size: 12.86px;">Art 艺术</a> <a href="/tags/Biology-%E7%94%9F%E7%89%A9%E5%AD%A6/" style="font-size: 12.86px;">Biology 生物学</a> <a href="/tags/Chemical-%E5%8C%96%E5%AD%A6/" style="font-size: 10px;">Chemical 化学</a> <a href="/tags/Chinese-%E5%9B%BD%E5%AD%A6/" style="font-size: 11.43px;">Chinese 国学</a> <a href="/tags/Computer/" style="font-size: 11.43px;">Computer</a> <a href="/tags/Economics-%E7%BB%8F%E6%B5%8E/" style="font-size: 14.29px;">Economics 经济</a> <a href="/tags/Hardware/" style="font-size: 10px;">Hardware</a> <a href="/tags/Math-%E6%95%B0%E5%AD%A6/" style="font-size: 17.14px;">Math 数学</a> <a href="/tags/Physics-%E7%89%A9%E7%90%86/" style="font-size: 18.57px;">Physics 物理</a> <a href="/tags/Pilot-%E9%A3%9E%E8%A1%8C/" style="font-size: 14.29px;">Pilot 飞行</a> <a href="/tags/Software/" style="font-size: 10px;">Software</a> <a href="/tags/Sports-%E4%BD%93%E8%82%B2/" style="font-size: 15.71px;">Sports 体育</a> <a href="/tags/%E8%8B%B1%E8%AF%AD-English/" style="font-size: 20px;">英语 English</a> <a href="/tags/%E9%9F%A9%E8%AF%AD-%ED%95%9C%EA%B8%80/" style="font-size: 12.86px;">韩语 한글</a>
+      <a href="/tags/Art-%E8%89%BA%E6%9C%AF/" style="font-size: 12.86px;">Art 艺术</a> <a href="/tags/Biology-%E7%94%9F%E7%89%A9%E5%AD%A6/" style="font-size: 12.86px;">Biology 生物学</a> <a href="/tags/Chemical-%E5%8C%96%E5%AD%A6/" style="font-size: 10px;">Chemical 化学</a> <a href="/tags/Chinese-%E5%9B%BD%E5%AD%A6/" style="font-size: 11.43px;">Chinese 国学</a> <a href="/tags/Computer/" style="font-size: 11.43px;">Computer</a> <a href="/tags/Economics-%E7%BB%8F%E6%B5%8E/" style="font-size: 14.29px;">Economics 经济</a> <a href="/tags/Hardware/" style="font-size: 10px;">Hardware</a> <a href="/tags/Math-%E6%95%B0%E5%AD%A6/" style="font-size: 17.14px;">Math 数学</a> <a href="/tags/Physics-%E7%89%A9%E7%90%86/" style="font-size: 18.57px;">Physics 物理</a> <a href="/tags/Pilot-%E9%A3%9E%E8%A1%8C/" style="font-size: 14.29px;">Pilot 飞行</a> <a href="/tags/Software/" style="font-size: 10px;">Software</a> <a href="/tags/Sports-%E4%BD%93%E8%82%B2/" style="font-size: 15.71px;">Sports 体育</a> <a href="/tags/Weather-%E6%B0%94%E8%B1%A1/" style="font-size: 10px;">Weather 气象</a> <a href="/tags/%E8%8B%B1%E8%AF%AD-English/" style="font-size: 20px;">英语 English</a> <a href="/tags/%E9%9F%A9%E8%AF%AD-%ED%95%9C%EA%B8%80/" style="font-size: 12.86px;">韩语 한글</a>
     </div>
   </div>
 
@@ -1013,7 +1035,7 @@ A map projection obtained by projecting points P on the surface of sphere from t
     <h3 class="widget-title">Archives</h3>
 
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/04/">April 2022</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/03/">March 2022</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/11/">November 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/09/">September 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/08/">August 2021</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/05/">May 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/04/">April 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/03/">March 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/02/">February 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/01/">January 2021</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/12/">December 2020</a><span class="archive-list-count">31</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/11/">November 2020</a><span class="archive-list-count">17</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/09/">September 2022</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/04/">April 2022</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/03/">March 2022</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/11/">November 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/09/">September 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/08/">August 2021</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/05/">May 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/04/">April 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/03/">March 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/02/">February 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/01/">January 2021</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/12/">December 2020</a><span class="archive-list-count">31</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/11/">November 2020</a><span class="archive-list-count">17</span></li></ul>
     </div>
   </div>
 
@@ -1060,6 +1082,9 @@ A map projection obtained by projecting points P on the surface of sphere from t
 
 
     <!-- headerblur min height -->
+    
+      var headerblur = document.getElementById("header-blur");
+      headerblur.style.minHeight = window.getComputedStyle(document.getElementById("allheader"), null).height;
     
     
 </script>
