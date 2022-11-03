@@ -109,6 +109,69 @@
         
           <section id="main">
   
+    <article id="post-2020-12-16-02-05-fft"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2020/12/16/2020-12-16-02-05-fft/">Fast Fourier Transform 快速傅立叶变换</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2020/12/16/2020-12-16-02-05-fft/" class="article-date">
+	  <time datetime="2020-12-15T18:05:00.000Z" itemprop="datePublished">December 16, 2020</time>
+	</a>
+
+       
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>The fast fourier transform or FFT is without exaggeration one of the most important algorithms created in the last century. So much of the modern technology that we have today such as wireless communication, GPS and in fact anything related to the vast field of signal processing relies on the insights of the FFT.</p>
+</blockquote>
+<blockquote>
+<p>But it’s also one of the most beautiful albums you’ll ever see. The depth and sheer number of brilliant ideas that went into it is just astounding it’s easy to miss the beauty aspect of the FFT since it’s often introduced in fairly complex settings that require a lot of prerequisite knowledge such as the discrete fourier transform time domain to frequency domain conversions and much more.</p>
+</blockquote>
+<p>The <a target="_blank" rel="noopener" href="https://eng.libretexts.org/Bookshelves/Electrical_Engineering/Signal_Processing_and_Modeling/Book%3A_Signals_and_Systems_(Baraniuk_et_al.)/13%3A_Capstone_Signal_Processing_Topics/13.02%3A_The_Fast_Fourier_Transform_(FFT)">Fast Fourier Transform</a> (FFT) is an efficient $O(N \log N)$ algorithm for calculating DFTs. The FFT exploits symmetries in the $W$ matrix to take a “divide and conquer” approach. We will first discuss deriving the actual FFT algorithm, some of its implications for the <a target="_blank" rel="noopener" href="https://cnx.org/contents/d2CEAGW5@15.4:nkErv5ik#eqn1">DFT</a>, and a speed comparison to drive home the importance of this powerful algorithm.</p>
+<p>To derive the FFT, we assume that the signal’s duration is a power of two:  $N&#x3D;2^l$ . Consider what happens to the even-numbered and odd-numbered elements of the sequence in the DFT calculation.</p>
+<p>$$\begin{align}S(k) &amp;&#x3D;s(0)+s(2) e^{(-j) \frac{2 \pi 2 k}{N}}+\ldots+s(N-2) e^{(-j) \frac{2 \pi(N-2) k}{N}}+s(1) e^{(-j) \frac{2 \pi k}{N}}+s(3) e^{(-j) \frac{2 \pi \times (2+1) k}{N}}+\ldots+s(N-1) e^{(-j) \frac{2 \pi(N-2+1) k}{N}} \nonumber \ &amp;&#x3D;s(0)+s(2)e^{(-j)\frac{2\pi k}{\frac{N}{2}}} + \ldots + s(N-2)e^{(-j) \frac{2 \pi\left(\frac{N}{2}-1\right) k}{\frac{N}{2}}} +\left( s(1)+s(3) e^{(-j) \frac{2 \pi k}{\frac{N}{2}}}+\dots+s(N-1) e^{(-j) \frac{2 \pi\left(\frac{N}{2}-1\right) k}{\frac{N}{2}}}\right) e^{\frac{-(j 2 \pi k)}{N}} \end{align}$$</p>
+<p>Each term in square brackets has the form of a $\frac{N}{2}$ -length DFT. The first one is a DFT of the even-numbered elements, and the second of the odd-numbered elements. The first DFT is combined with the second multiplied by the complex exponential $e^{\frac{-(j 2\pi k)}{N}}$. The half-length transforms are each evaluated at frequency indices $k \in{0, \ldots, N-1}$. Normally, the number of frequency indices in a DFT calculation range between zero and the transform length minus one. The computational advantage of the FFT comes from recognizing the periodic nature of the discrete Fourier transform. The FFT simply reuses the computations made in the half-length transforms and combines them through additions and the multiplication by $e^{\frac{-(j 2 \pi k)}{N}}$, which is not periodic over $\frac{N}{2}$, to rewrite the length-N DFT. The formula above illustrates this decomposition. As it stands, we now compute two length-$\frac{N}{2}$ transforms (complexity $2 O\left(\frac{N^{2}}{4}\right)$), multiply one of them by the complex exponential (complexity $O(N)$), and add the results (complexity $O(N)$). At this point, the total complexity is still dominated by the half-length DFT calculations, but the proportionality coefficient has been reduced.</p>
+<p>Now for the fun. Because $N&#x3D;2^l$, each of the half-length transforms can be reduced to two quarter-length transforms, each of these to two eighth-length ones, etc. This decomposition continues until we are left with length-2 transforms. This transform is quite simple, involving only additions. Thus, the first stage of the FFT has $\frac{N}{2}$length-2 transforms (see the bottom part of fomula). Pairs of these transforms are combined by adding one to the other multiplied by a complex exponential. Each pair requires 4 additions and 4 multiplications, giving a total number of computations equaling $8\frac{N}{4}&#x3D;\frac{N}{2}$. This number of computations does not change from stage to stage. Because the number of stages, the number of times the length can be divided by two, equals $\log_2 N$, the complexity of the FFT is $O(N \log N)$.</p>
+<p><img src="/2020/12/16/2020-12-16-02-05-fft/dft1.jpg"></p>
+<p><img src="/2020/12/16/2020-12-16-02-05-fft/dft2.jpg"></p>
+<blockquote>
+<p>The initial decomposition of a length-8 DFT into the terms using even- and odd-indexed inputs marks the first phase of developing the FFT algorithm. When these half-length transforms are successively decomposed, we are left with the diagram shown in the bottom panel that depicts the length-8 FFT computation.</p>
+</blockquote>
+<p>法国数学家傅里叶提出，任何周期函数都可表示为不同频率的正弦函数和，<br>或余弦函数之和，其中每个正弦函数和，或余弦函数都要乘以不同的系数，这个和就称为傅里叶级数。</p>
+<p>DFT 是指 Discrete Fourier Transform，离散傅里叶变换。</p>
+<p>FFT 是指 快速傅里叶变换，它是 DFT 的一种简化计算。<br>它是根据离散傅氏变换的奇、偶、虚、实等特性，对离散傅立叶变换的算法进行改进获得的。</p>
+
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+      
+  <span class="ico-tags"></span>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Math-%E6%95%B0%E5%AD%A6/" rel="tag">Math 数学</a></li></ul>
+
+      
+    </footer>
+    <hr class="entry-footer-hr">
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
     <article id="post-2020-12-15-11-25-baduk-4-0"  class="article article-type-post" itemscope itemprop="blogPost" >
   <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
     
@@ -719,82 +782,6 @@ Four Stroke Engine CycleThe four strokes of the engine go by the following names
 <!-- Table of Contents -->
 
   
-    <article id="post-2020-12-13-15-17-cooling-heating"  class="article article-type-post" itemscope itemprop="blogPost" >
-  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="article-title" href="/2020/12/13/2020-12-13-15-17-cooling-heating/">Cooling &amp; Heating 制冷和加热</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-meta">
-      
-	<a href="/2020/12/13/2020-12-13-15-17-cooling-heating/" class="article-date">
-	  <time datetime="2020-12-13T07:17:00.000Z" itemprop="datePublished">December 13, 2020</time>
-	</a>
-
-       
-      
-    </div>
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-
-          
-          <div class="entry-summary">
-          
-
-Air conditioning (often referred to as AC, A&#x2F;C, or air con) is the process of removing heat and moisture from the interior of an occupied space to improve the comfort of occupants. Air conditioning can be used in both domestic and commercial environments. This process is most commonly used to achieve a more comfortable interior environment, typically for humans and other animals; however, air conditioning is also used to cool and dehumidify rooms filled with heat-producing electronic devices, such as computer servers, power amplifiers, and to display and store some delicate products, such as artwork.
-A simple stylized diagram of the refrigeration cycle:
-
-
-condensing coil
-
-
-
-expansion valve
-
-
-
-evaporator coil
-
-
-
-compressor
-
-
-
-
-
-        
-          <p class="article-more-link">
-            <a href="/2020/12/13/2020-12-13-15-17-cooling-heating/#more">Continue Reading →</a>
-          </p>
-        </div>
-      
-    </div>
-    <footer class="entry-meta entry-footer">
-      
-      
-  <span class="ico-tags"></span>
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Physics-%E7%89%A9%E7%90%86/" rel="tag">Physics 物理</a></li></ul>
-
-      
-    </footer>
-    <hr class="entry-footer-hr">
-  </div>
-  
-</article>
-
-<!-- Table of Contents -->
-
-  
 
 
   <nav id="page-nav">
@@ -907,6 +894,18 @@ compressor
               <div class="widget-entry-summary" style="margin: 0;">
             
 
+              <h6 style="margin: 0;"><a href="/2022/11/04/2022-11-04-00-40-poem/">Poem 诗歌</a></h6>
+              <span>November 4, 2022</span>
+            </div>
+
+          </li>
+        
+          <li class="clearfix">
+
+            
+              <div class="widget-entry-summary" style="margin: 0;">
+            
+
               <h6 style="margin: 0;"><a href="/2022/11/02/2022-11-02-13-22-hamlet/">Hamlet 哈姆雷特</a></h6>
               <span>November 2, 2022</span>
             </div>
@@ -961,18 +960,6 @@ compressor
 
           </li>
         
-          <li class="clearfix">
-
-            
-              <div class="widget-entry-summary" style="margin: 0;">
-            
-
-              <h6 style="margin: 0;"><a href="/2022/03/06/2022-03-06-10-38-ai/">Ai 人工智能</a></h6>
-              <span>March 6, 2022</span>
-            </div>
-
-          </li>
-        
       </ul>
     </div>
   </div>
@@ -992,7 +979,7 @@ compressor
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Art-%E8%89%BA%E6%9C%AF/" rel="tag">Art 艺术</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Biology-%E7%94%9F%E7%89%A9%E5%AD%A6/" rel="tag">Biology 生物学</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Chemical-%E5%8C%96%E5%AD%A6/" rel="tag">Chemical 化学</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Chinese-%E5%9B%BD%E5%AD%A6/" rel="tag">Chinese 国学</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Computer/" rel="tag">Computer</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Economics-%E7%BB%8F%E6%B5%8E/" rel="tag">Economics 经济</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hardware/" rel="tag">Hardware</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Literature-%E6%96%87%E5%AD%A6/" rel="tag">Literature 文学</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Math-%E6%95%B0%E5%AD%A6/" rel="tag">Math 数学</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Physics-%E7%89%A9%E7%90%86/" rel="tag">Physics 物理</a><span class="tag-list-count">15</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Pilot-%E9%A3%9E%E8%A1%8C/" rel="tag">Pilot 飞行</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Software/" rel="tag">Software</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Sports-%E4%BD%93%E8%82%B2/" rel="tag">Sports 体育</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Weather-%E6%B0%94%E8%B1%A1/" rel="tag">Weather 气象</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%8B%B1%E8%AF%AD-English/" rel="tag">英语 English</a><span class="tag-list-count">16</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%9F%A9%E8%AF%AD-%ED%95%9C%EA%B8%80/" rel="tag">韩语 한글</a><span class="tag-list-count">3</span></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Art-%E8%89%BA%E6%9C%AF/" rel="tag">Art 艺术</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Biology-%E7%94%9F%E7%89%A9%E5%AD%A6/" rel="tag">Biology 生物学</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Chemical-%E5%8C%96%E5%AD%A6/" rel="tag">Chemical 化学</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Chinese-%E5%9B%BD%E5%AD%A6/" rel="tag">Chinese 国学</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Computer/" rel="tag">Computer</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Economics-%E7%BB%8F%E6%B5%8E/" rel="tag">Economics 经济</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hardware/" rel="tag">Hardware</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Literature-%E6%96%87%E5%AD%A6/" rel="tag">Literature 文学</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Math-%E6%95%B0%E5%AD%A6/" rel="tag">Math 数学</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Physics-%E7%89%A9%E7%90%86/" rel="tag">Physics 物理</a><span class="tag-list-count">15</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Pilot-%E9%A3%9E%E8%A1%8C/" rel="tag">Pilot 飞行</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Software/" rel="tag">Software</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Sports-%E4%BD%93%E8%82%B2/" rel="tag">Sports 体育</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Weather-%E6%B0%94%E8%B1%A1/" rel="tag">Weather 气象</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%8B%B1%E8%AF%AD-English/" rel="tag">英语 English</a><span class="tag-list-count">16</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%9F%A9%E8%AF%AD-%ED%95%9C%EA%B8%80/" rel="tag">韩语 한글</a><span class="tag-list-count">3</span></li></ul>
     </div>
   </div>
 
@@ -1002,7 +989,7 @@ compressor
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/Art-%E8%89%BA%E6%9C%AF/" style="font-size: 12.86px;">Art 艺术</a> <a href="/tags/Biology-%E7%94%9F%E7%89%A9%E5%AD%A6/" style="font-size: 12.86px;">Biology 生物学</a> <a href="/tags/Chemical-%E5%8C%96%E5%AD%A6/" style="font-size: 10px;">Chemical 化学</a> <a href="/tags/Chinese-%E5%9B%BD%E5%AD%A6/" style="font-size: 11.43px;">Chinese 国学</a> <a href="/tags/Computer/" style="font-size: 11.43px;">Computer</a> <a href="/tags/Economics-%E7%BB%8F%E6%B5%8E/" style="font-size: 14.29px;">Economics 经济</a> <a href="/tags/Hardware/" style="font-size: 10px;">Hardware</a> <a href="/tags/Literature-%E6%96%87%E5%AD%A6/" style="font-size: 10px;">Literature 文学</a> <a href="/tags/Math-%E6%95%B0%E5%AD%A6/" style="font-size: 17.14px;">Math 数学</a> <a href="/tags/Physics-%E7%89%A9%E7%90%86/" style="font-size: 18.57px;">Physics 物理</a> <a href="/tags/Pilot-%E9%A3%9E%E8%A1%8C/" style="font-size: 14.29px;">Pilot 飞行</a> <a href="/tags/Software/" style="font-size: 10px;">Software</a> <a href="/tags/Sports-%E4%BD%93%E8%82%B2/" style="font-size: 15.71px;">Sports 体育</a> <a href="/tags/Weather-%E6%B0%94%E8%B1%A1/" style="font-size: 10px;">Weather 气象</a> <a href="/tags/%E8%8B%B1%E8%AF%AD-English/" style="font-size: 20px;">英语 English</a> <a href="/tags/%E9%9F%A9%E8%AF%AD-%ED%95%9C%EA%B8%80/" style="font-size: 12.86px;">韩语 한글</a>
+      <a href="/tags/Art-%E8%89%BA%E6%9C%AF/" style="font-size: 12.86px;">Art 艺术</a> <a href="/tags/Biology-%E7%94%9F%E7%89%A9%E5%AD%A6/" style="font-size: 12.86px;">Biology 生物学</a> <a href="/tags/Chemical-%E5%8C%96%E5%AD%A6/" style="font-size: 10px;">Chemical 化学</a> <a href="/tags/Chinese-%E5%9B%BD%E5%AD%A6/" style="font-size: 10px;">Chinese 国学</a> <a href="/tags/Computer/" style="font-size: 11.43px;">Computer</a> <a href="/tags/Economics-%E7%BB%8F%E6%B5%8E/" style="font-size: 14.29px;">Economics 经济</a> <a href="/tags/Hardware/" style="font-size: 10px;">Hardware</a> <a href="/tags/Literature-%E6%96%87%E5%AD%A6/" style="font-size: 12.86px;">Literature 文学</a> <a href="/tags/Math-%E6%95%B0%E5%AD%A6/" style="font-size: 17.14px;">Math 数学</a> <a href="/tags/Physics-%E7%89%A9%E7%90%86/" style="font-size: 18.57px;">Physics 物理</a> <a href="/tags/Pilot-%E9%A3%9E%E8%A1%8C/" style="font-size: 14.29px;">Pilot 飞行</a> <a href="/tags/Software/" style="font-size: 10px;">Software</a> <a href="/tags/Sports-%E4%BD%93%E8%82%B2/" style="font-size: 15.71px;">Sports 体育</a> <a href="/tags/Weather-%E6%B0%94%E8%B1%A1/" style="font-size: 10px;">Weather 气象</a> <a href="/tags/%E8%8B%B1%E8%AF%AD-English/" style="font-size: 20px;">英语 English</a> <a href="/tags/%E9%9F%A9%E8%AF%AD-%ED%95%9C%EA%B8%80/" style="font-size: 12.86px;">韩语 한글</a>
     </div>
   </div>
 
@@ -1012,7 +999,7 @@ compressor
     <h3 class="widget-title">Archives</h3>
 
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/11/">November 2022</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/09/">September 2022</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/04/">April 2022</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/03/">March 2022</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/11/">November 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/09/">September 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/08/">August 2021</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/05/">May 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/04/">April 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/03/">March 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/02/">February 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/01/">January 2021</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/12/">December 2020</a><span class="archive-list-count">31</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/11/">November 2020</a><span class="archive-list-count">17</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/11/">November 2022</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/09/">September 2022</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/04/">April 2022</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/03/">March 2022</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/11/">November 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/09/">September 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/08/">August 2021</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/05/">May 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/04/">April 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/03/">March 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/02/">February 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/01/">January 2021</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/12/">December 2020</a><span class="archive-list-count">31</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/11/">November 2020</a><span class="archive-list-count">17</span></li></ul>
     </div>
   </div>
 
