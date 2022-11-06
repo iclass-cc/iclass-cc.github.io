@@ -22,7 +22,7 @@
 <meta property="og:image" content="https://iclass.cc/2021/01/07/2021-01-07-05-25-divergence-curl/d2.jpg">
 <meta property="og:image" content="https://iclass.cc/2021/01/07/2021-01-07-05-25-divergence-curl/c1.jpg">
 <meta property="article:published_time" content="2021-01-06T21:25:00.000Z">
-<meta property="article:modified_time" content="2022-09-03T04:43:33.122Z">
+<meta property="article:modified_time" content="2022-11-06T01:46:27.287Z">
 <meta property="article:author" content="Bruce">
 <meta property="article:tag" content="Physics 物理">
 <meta name="twitter:card" content="summary">
@@ -141,6 +141,8 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="Divergence"><a href="#Divergence" class="headerlink" title="Divergence"></a>Divergence</h2><p>Divergence is an operation on a vector field that tells us how the field behaves toward or away from a point. Locally, the divergence of a vector field $\vec{F}$ in $\mathbb{R}^2$ or $\mathbb{R}^3$ at a particular point $P$ is a measure of the “outflowing-ness” of the vector field at $P$.<br>If $\vec{F}$ represents the velocity of a fluid, then the divergence of $\vec{F}$ at $P$ measures the net rate of change with respect to time of the amount of fluid flowing away from $P$ (the tendency of the fluid to flow “out of” P). In particular, if the amount of fluid flowing into $P$ is the same as the amount flowing out, then the divergence at $P$ is zero.</p>
+<span id="more"></span>
+
 <h3 id="Definition-divergence-in-mathbb-R-3"><a href="#Definition-divergence-in-mathbb-R-3" class="headerlink" title="Definition: divergence in $\mathbb{R}^3$"></a>Definition: divergence in $\mathbb{R}^3$</h3><p>If $\vec{F} &#x3D; \langle P,Q,R \rangle$ is a vector field in $\mathbb{R}^3$ and $P_x, , Q_y,$ and $R_z$ all exist, then the divergence of $\vec{F}$ is defined by</p>
 <p>$$\begin{aligned}<br>\operatorname{div} F &amp;&#x3D;P_{x}+Q_{y}+R_{z} \<br>&amp;&#x3D;\frac{\partial P}{\partial x}+\frac{\partial Q}{\partial y}+\frac{\partial R}{\partial z}<br>\end{aligned}$$</p>
 <p>Note the divergence of a vector field is not a vector field, but a scalar function. In terms of the gradient operator</p>
@@ -148,8 +150,6 @@
 <p>divergence can be written symbolically as the dot product</p>
 <p>$$\operatorname{div} \vec{F}&#x3D;\vec{\nabla} \cdot \vec{F}.$$</p>
 <p>Note this is merely helpful notation, because the dot product of a vector of operators and a vector of functions is not meaningfully defined given our current definition of dot product.</p>
-<span id="more"></span>
-
 <p>If $\vec{F} &#x3D; \langle P,Q \rangle$ is a vector field in $\mathbb{R}^2$ , and $P_{x}$ and $Q_{y}$ both exist, then the divergence of $\vec{F}$ is defined similarly as</p>
 <p>$$\begin{aligned}<br>\operatorname{div} \vec{F} &amp;&#x3D;P_{x}+Q_{y} \<br>&amp;&#x3D;\frac{\partial P}{\partial x}+\frac{\partial Q}{\partial y} \<br>&amp;&#x3D;\vec{\nabla} \cdot \vec{F}<br>\end{aligned}.$$</p>
 <p>To illustrate this point, consider the two vector fields in Figure 1. At any particular point, the amount flowing in is the same as the amount flowing out, so at every point the “outflowing-ness” of the field is zero. Therefore, we expect the divergence of both fields to be zero, and this is indeed the case, as</p>
